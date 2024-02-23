@@ -1,7 +1,3 @@
-img {
-    margin-right: 20px !important;
-}
-
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -15,6 +11,10 @@ img {
     padding-top: 20px;
   }
   
+  .sidenav img {
+    margin-right: 20px !important;
+  }
+
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -27,6 +27,10 @@ img {
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
+  }
+
+  .sidenav a.nav-link.active{
+    color: rgb(255, 174, 0);
   }
   
   /* Style page content */
