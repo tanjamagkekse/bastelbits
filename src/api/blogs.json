@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Mein erster Blog-Beitrag",
+    "author": "Max Mustermann",
+    "date": "2024-02-23",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+  },
+  {
+    "id": 2,
+    "title": "Ein weiterer Blog-Beitrag",
+    "author": "Erika Musterfrau",
+    "date": "2024-02-24",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+  },
+  // Weitere Blog-Beiträge hier...
+]

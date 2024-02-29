@@ -1,0 +1,22 @@
+<div class="gray-bg"></div>
+
+<div class="flight-history">
+  <div class="flight-history-inside card">
+    <div class="card-body">
+      <h2>Blog Titel: {{article?.articleName}}</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h1>Es funktioniert!!!</h1>
+        </li>
+      </ul>
+
+      <a
+        [routerLink]="['/home', { outlets: { aux: null } }]"
+        class="btn btn-default"
+      >
+        Close
+      </a>
+    </div>
+  </div>
+</div>
