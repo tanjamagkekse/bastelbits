@@ -1,6 +1,7 @@
 export interface IArticle {
     articleId: number;
-    articleName: string;
+    title: string;
+    topic: string; 
     releaseDate: string;
     snippet: string;
     content: string;

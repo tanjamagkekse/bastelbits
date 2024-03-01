@@ -1,9 +1,10 @@
 [
     {
       "articleId": 1,
-      "articleName": "Mein erster Blog Artikel",
+      "title": "Mein erster Blog Artikel",
+      "topic": "Design",
       "releaseDate": "01. März 2024",
-      "snippet": "Kurzer Text",
+      "snippet": "Kurzer Text.",
       "content": "Langer Text mit <br> HTML Gedönse",
       "imageUrl": "assets/231130_141139.png"
     }
