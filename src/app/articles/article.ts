@@ -3,6 +3,7 @@ export interface IArticle {
     articleName: string;
     releaseDate: string;
     snippet: string;
+    content: string;
     imageUrl: string;
   }
   

@@ -1,9 +1,10 @@
 [
     {
       "articleId": 1,
-      "articleName": "MeinBlogArtikel",
-      "releaseDate": "March 19, 2019",
-      "snippet": "Leaf rake with 48-inch wooden handle.",
+      "articleName": "Mein erster Blog Artikel",
+      "releaseDate": "01. März 2024",
+      "snippet": "Mein erster Artikel in Kurzzusammenfassung",
+      "content": "Ein echt langer Text.",
       "imageUrl": "assets/231130_141139.png"
     }
   ]
