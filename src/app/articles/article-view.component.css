@@ -9,7 +9,7 @@
     z-index: 2000;
   }
   
-  .flight-history {
+  .article {
     left: 0px;
     top: 0px;
     width: 100%;
@@ -18,7 +18,7 @@
     z-index: 2010;
   }
   
-  .flight-history-inside {
+  .article-inside {
     background-color: white;
     margin: 100px auto;
     width: 400px;
