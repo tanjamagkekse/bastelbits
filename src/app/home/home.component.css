@@ -2,6 +2,17 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   }
+
+
+  .newestContent {
+    display: flex;
+    align-items: center; /* Inhalt vertikal zentrieren */
+  }
+  
+  .newestContent img {
+    max-height: 100%; /* Maximale Höhe des Bildes */
+    width: auto; /* Automatische Breitenanpassung */
+  }
   
   .display-4 {
     font-size: 2.5rem;
@@ -12,15 +23,12 @@
     }
   }
 
-
   .nav-scroller {
     position: sticky;
     top: 0;
-    /* warum ist die ganze Seite nur 80%? */
-    width: 80%;
+    width: 100%;
     background-color: #fff; 
     z-index: 999; 
-
   }
 
   .nav-scroller .nav {
@@ -59,27 +67,24 @@
     .h-md-250 { height: 250px; }
   }
   
-  .border-top { border-top: 1px solid #e5e5e5; }
-  .border-bottom { border-bottom: 1px solid #e5e5e5; }
-  
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
   
+
+
+
   /*
    * Blog name and description
    */
-  .blog-title {
-    margin-bottom: 0;
-    font-size: 2rem;
-    font-weight: 400;
-  }
+
   .blog-description {
     font-size: 1.1rem;
     color: #999;
   }
   
   @media (min-width: 40em) {
-    .blog-title {
-      font-size: 3.5rem;
+    .blog-title-sidebar {
+      font-size: 1.5rem;
+      text-decoration: none;
     }
   }
   

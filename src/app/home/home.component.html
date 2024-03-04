@@ -1,69 +1,46 @@
-
-
-    <div class="container">
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-            <a class="p-2 text-muted" href="#">Malen</a>
-            <a class="p-2 text-muted" href="#">Handlettering</a>
-            <a class="p-2 text-muted" href="#">Holz</a>
-            <a class="p-2 text-muted" href="#">Einrichtung</a>
-            <a class="p-2 text-muted" href="#">Licht</a>
-            <a class="p-2 text-muted" href="#">Coding</a>
-            <a class="p-2 text-muted" href="#">Dies Das</a>
-            <a class="p-2 text-muted" href="#">
-                <i class="bi bi-search"></i>
-            </a>
-        </nav>
-      </div>
-
-      <div class="p-3 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class=" px-0">
-          <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents. [...]</p>
-        </div>
-      </div>
-
-      <div class="row mb-2">
-        <!-- <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="#">Featured post</a>
-              </h3>
-              <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content. [...]</p>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" src="assets/231130_141120.jpg" alt="Card image cap">
+      <header class="blog-header py-3">
+        
+          <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#">Malen</a>
+                <a class="p-2 text-muted" href="#">Handlettering</a>
+                <a class="p-2 text-muted" href="#">Holz</a>
+                <a class="p-2 text-muted" href="#">Einrichtung</a>
+                <a class="p-2 text-muted" href="#">Licht</a>
+                <a class="p-2 text-muted" href="#">Coding</a>
+                <a class="p-2 text-muted" href="#">Dies Das</a>
+                <a class="p-2 text-muted" href="#">
+                    <i class="bi bi-search"></i>
+                </a>
+            </nav>
           </div>
-        </div> -->
+    
+      </header>
 
-        <div *ngFor="let article of articles" class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-success">{{article.topic}}</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="#">{{article.title}}</a>
-              </h3>
-              <div class="mb-1 text-muted">{{article.releaseDate}}</div>
-              <p class="card-text mb-auto">{{article.snippet}}
-                <a [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]">
+      <div class="container">
+        <div class="p-3 p-md-5 mb-4 text-white rounded bg-dark">
+          <div class="row">
+            <div class="col-md-8 newestContent">
+              <div class=" px-0" >
+                <h1 class="display-4 font-italic">Newest Article: <br> {{lastArticle?.title}}</h1>
+                <p class="lead my-3">{{lastArticle?.snippet}}</p>
+                <a [routerLink]="['/home', { outlets: { aux: ['article-view', lastArticle?.articleId]}}]">
                   <p>[... weiterlesen]</p>
                 </a>
-              </p>
+              </div>
+            </div>       
+            <div class="col-md-4 newestContent">
+              <img class="img-fluid" src="{{lastArticle?.imageUrl}}" alt="{{lastArticle?.title}}">
             </div>
-            <!-- Hier langfristig Thumbnails einbauen -->
-            <img class="card-img-right flex-auto d-none d-md-block" src={{article.imageUrl}} alt={{article.title}}>
           </div>
         </div>
       </div>
-    </div>
 
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
           <h1 class="pb-3 mb-4 font-italic border-bottom">
-            Dat Neuste
+            Weiteres
           </h1>
 
           <div class="blog-post">
@@ -133,13 +110,31 @@
         </div><!-- /.blog-main -->
 
         <aside class="col-md-4 blog-sidebar">
-          <div class="p-3 mb-3 bg-light rounded">
+          <div class="card p-3 mb-3 bg-light">
             <h4 class="font-italic">About</h4>
             <p class="mb-0">Heer enz en schicker <em>Verweis</em> oder en snippet aus der about component.</p>
-            
           </div>
 
-          <div class="p-3 mb-3 bg-light rounded">
+          <div *ngFor="let article of twoRandomArticles" class="col-md-auto">
+            <div class="card flex-row bg-light mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-success">{{article.topic}}</strong>
+                <h4 class="mb-0">
+                  <a class="blog-title-sidebar text-dark" href="#">{{article.title}}</a>
+                </h4>
+                <div class="mb-1 text-muted">{{article.releaseDate}}</div>
+                <p class="card-text mb-auto">{{article.snippet}}
+                  <a [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]">
+                    <p>[... weiterlesen]</p>
+                  </a>
+                </p>
+              </div>
+              <!-- Hier langfristig Thumbnails einbauen -->
+              <img class="card-img-right flex-auto d-none d-md-block" src={{article.imageUrl}} alt={{article.title}}>
+            </div>
+          </div>
+
+          <div class="card p-3 mb-3 bg-light">
             <h4 class="font-italic">Wo du mich noch findest</h4>
             <ol class="list-unstyled">
               <li><a href="#">Instagram</a></li>
@@ -148,9 +143,7 @@
             </ol>
           </div>
         </aside><!-- /.blog-sidebar -->
-
       </div><!-- /.row -->
-
     </main><!-- /.container -->
 
     
