@@ -5,6 +5,8 @@
 
   a {
     text-decoration: none;
+    font-size: 18px;
+    color: rgb(218, 149, 0);
   }
 
   .blog-header{
@@ -14,8 +16,12 @@
     width: 100%;
     padding-right: 40px;
     padding-left: 40px;
-    background-color: #1d1d20; /* Black */
+    background-color: #1d1d20;
 
+  }
+
+  .newestContentContainer{
+    background-color: #1d1d20;
   }
 
   .newestContent {
@@ -27,6 +33,7 @@
   .newestContent img {
     max-height: 100%; /* Maximale Höhe des Bildes */
     width: auto; /* Automatische Breitenanpassung */
+    border-radius: 8px;
   }
   
   .display-4 {
