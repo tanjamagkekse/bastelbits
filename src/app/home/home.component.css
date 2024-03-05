@@ -1,11 +1,26 @@
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .test {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  .blog-header{
+    position: sticky;
+    top: 0; /* Platziert den Header am oberen Bildschirmrand */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #1d1d20; /* Black */
+
+  }
 
   .newestContent {
     display: flex;
+    top: 40px;
     align-items: center; /* Inhalt vertikal zentrieren */
   }
   
@@ -23,33 +38,6 @@
     }
   }
 
-  .nav-scroller {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #fff; 
-    z-index: 999; 
-  }
-
-  .nav-scroller .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .nav-scroller .nav-link {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    font-size: .875rem;
-  }
   
   .card-img-right {
     height: 100%;
