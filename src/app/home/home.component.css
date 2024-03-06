@@ -1,13 +1,10 @@
   
   h1, h2, h3, h4, h5, h6, .font {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    text-decoration: none;
   }
 
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    color: rgb(218, 149, 0);
-  }
+
 
   .blog-header{
     position: sticky;
@@ -18,39 +15,18 @@
     padding-left: 40px;
     background-color: white;
   }
-  
-  .display-4 {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 768px) {
-    .display-4 {
-      font-size: 3rem;
-    }
+
+  .masonry-box{
+    margin-left: 20px;
+
   }
 
-  
-  .card-img-right {
-    height: 100%;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  .flex-auto {
-    -ms-flex: 0 0 auto;
-    -webkit-box-flex: 0;
-    flex: 0 0 auto;
-  }
-  
-  .h-250 { height: 250px; }
-  @media (min-width: 768px) {
-    .h-md-250 { height: 250px; }
+  .masonry-item{
+    width: 250px;
+    margin-bottom: 15px;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .15);
   }
 
-
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .15); }
-  
-  /*
-   * Blog name and description
-   */
   
   /* Pagination */
   .blog-pagination {
@@ -58,17 +34,6 @@
   }
   .blog-pagination > .btn {
     border-radius: 2rem;
-  }
-  
-  /*
-   * Blog posts
-   */
-  .blog-post {
-    margin-bottom: 4rem;
-  }
-  .blog-post-title {
-    margin-bottom: .25rem;
-    font-size: 1.5rem;
   }
   
   /*

@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit, OnDestroy{
   articles: IArticle[] = [];
   twoRandomArticles: IArticle[] = [];
   lastArticle: IArticle | undefined;
+  articlesReverse: IArticle[] = [];
 	
   public masonryOptions: NgxMasonryOptions = {
 		gutter: 10,
@@ -26,15 +27,17 @@ export class HomeComponent implements OnInit, OnDestroy{
 		initLayout: true,
 		fitWidth: true
 	};
-  
+
+
   constructor(private articleService: ArticleService) {}
   
   ngOnInit(): void {
     this.sub = this.articleService.getArticles().subscribe({
       next: articles => {
         this.articles = articles;
-        this.lastArticle = this.articles[this.articles.length - 1];
-        this.twoRandomArticles = this.selectRandomArticles(articles, 2);
+        this.articlesReverse = articles.reverse();
+        // this.lastArticle = this.articles[this.articles.length - 1];
+        // this.twoRandomArticles = this.selectRandomArticles(articles, 2);
       },
       error: err => this.errorMessage = err
     });
