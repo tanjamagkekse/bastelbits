@@ -4,11 +4,12 @@ import { RouterModule } from '@angular/router';
 import { IArticle } from '../articles/article';
 import { ArticleService } from '../articles/article.service';
 import { Subscription } from 'rxjs';
+import { NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NgxMasonryModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -18,7 +19,13 @@ export class HomeComponent implements OnInit, OnDestroy{
   articles: IArticle[] = [];
   twoRandomArticles: IArticle[] = [];
   lastArticle: IArticle | undefined;
-
+	
+  public masonryOptions: NgxMasonryOptions = {
+		gutter: 10,
+		resize: true,
+		initLayout: true,
+		fitWidth: true
+	};
   
   constructor(private articleService: ArticleService) {}
   
