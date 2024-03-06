@@ -4,17 +4,9 @@
   <div class="article-inside card">
     <div class="card-body">
       <h2>{{article?.title}}</h2>
-
-      <ul class="list-group">
-        <li class="list-group-item">
-          {{article?.content}}
-        </li>
-      </ul>
-
-      <a
-        [routerLink]="['/home', { outlets: { aux: null } }]"
-        class="btn btn-default"
-      >
+      <div class="mb-4" [innerHTML]="article?.content"></div>
+      <a [routerLink]="['/home', { outlets: { aux: null } }]"
+          class="btn btn-light">
         Close
       </a>
     </div>

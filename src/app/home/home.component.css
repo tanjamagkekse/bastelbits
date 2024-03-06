@@ -4,8 +4,6 @@
     text-decoration: none;
   }
 
-
-
   .blog-header{
     position: sticky;
     top: 0; /* Platziert den Header am oberen Bildschirmrand */
@@ -16,9 +14,13 @@
     background-color: white;
   }
 
+  .topic-text{
+    color: rgb(218, 149, 0);
+    width: 100%;
+  }
+
   .masonry-box{
     margin-left: 20px;
-
   }
 
   .masonry-item{
@@ -26,16 +28,12 @@
     margin-bottom: 15px;
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .15);
   }
-
   
   /* Pagination */
   .blog-pagination {
     margin-bottom: 4rem;
   }
-  .blog-pagination > .btn {
-    border-radius: 2rem;
-  }
-  
+   
   /*
    * Footer
    */
