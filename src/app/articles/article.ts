@@ -5,6 +5,7 @@ export interface IArticle {
     releaseDate: string;
     snippet: string;
     content: string;
-    imageUrl: string;
+    thumbnailImageUrl: string;
+    headerImageUrl: string;
   }
   

@@ -2,13 +2,40 @@
 
 <div class="article">
   <div class="article-inside card">
-    <div class="card-body">
-      <h2>{{article?.title}}</h2>
-      <div class="mb-4" [innerHTML]="article?.content"></div>
-      <a [routerLink]="['/home', { outlets: { aux: null } }]"
-          class="btn btn-light">
-        Close
-      </a>
+
+    <!-- Closing Button -->
+    <a [routerLink]="['/home', { outlets: { aux: null } }]"
+      class="btn btn-light button-position">
+      X
+    </a>
+
+    <!-- Header -->
+    <!-- <header>
+      <div class="header-image">
+        <img src="{{article?.titleImageUrl}}" class="w-100" alt="Five developers at work.">
+      </div>
+      <div class='header-overlay'>
+        <div class='header-overlay-text'>
+          <h1>{{article?.title}}</h1>
+          <h6>{{article?.snippet}}</h6>
+        </div>
+      </div>
+    </header> -->
+    <header>
+      <div class="header-image" style="background-image: linear-gradient(rgba(195, 55, 100, 0.8),rgba(29, 38, 113, 0.8)), url('{{article?.headerImageUrl}}');">
+        <div class='header-overlay'>
+          <div class='header-overlay-text'>
+            <h1 class="mb-4">{{article?.title}}</h1>
+            <h6>{{article?.snippet}}</h6>
+          </div>
+        </div>
+      </div>
+    </header>
+
+   <!-- Content -->
+    <div class="card-body">   
+      <div class="mb-4" [innerHTML]=article?.content></div>
     </div>
+
   </div>
 </div>
