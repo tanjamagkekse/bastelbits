@@ -1,0 +1,32 @@
+
+.card {
+    position: fixed;
+    overflow-y: auto;
+    height: 90%; 
+    width: 80%;
+}
+
+.relative { 
+    position: relative; 
+}
+
+h1{
+    font-size: 400%;
+    padding-top: 3%;
+
+} 
+
+.about-text {
+    width: 50%; 
+    margin-left: 40%;
+    padding-top: 2%; 
+}
+
+ .fixed img { 
+    position: fixed; 
+    width: 25%; 
+    border-radius: 10px;
+}
+
+
+
