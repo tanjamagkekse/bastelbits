@@ -1,52 +1,58 @@
 .gray-bg {
-    opacity: 0.6;
-    background-color: black;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 2000;
-  }
-  
-  .article {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    margin-left: 215px;
-    margin-right: 15px;
-    position: fixed;
-    z-index: 2010;
-  }
-  
-  .article-inside {
-    background-color: white;
-    margin: 20px auto;
-    overflow-y: scroll;
-    max-height: 90vh;
-  }
-  
-  .button-position{
-    position: fixed;
-    background: lightgray;
-    color: black;
-    border-radius: 50px;
-    font-weight: bold;
-    top: 10px;
-    right: 43%;
-    z-index: 2020;
-  }
+  opacity: 0.6;
+  background-color: black;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2000;
+}
 
-  header {
-    position: relative;
-  }
+.article {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  position: fixed;
+  z-index: 2010;
+}
 
-  .header-image {
-    height: 300px; /* Höhe des Headers */
-    background-size: cover; /* Bild an die Größe anpassen */
-    background-position: center; /* Bild zentrieren */
-    position: relative; /* Position relativ für Overlay */
-  } 
+.article-inside-image {
+  margin: 20px auto;
+}
+
+c-carousel-item img{
+  height: 90vh;
+}
+
+.article-inside-text {
+  background-color: white;
+  margin: 20px auto;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.button-position{
+  position: fixed;
+  background: lightgray;
+  color: black;
+  border-radius: 50px;
+  font-weight: bold;
+  top: 10px;
+  right: 43%;
+  z-index: 2020;
+}
+
+header {
+  position: relative;
+}
+
+.header-image {
+  height: 300px; /* Höhe des Headers */
+  background-size: cover; /* Bild an die Größe anpassen */
+  background-position: center; /* Bild zentrieren */
+  position: relative; /* Position relativ für Overlay */
+} 
 
 .header-overlay {
   position: absolute; /* Position absolut, um über dem Bild zu liegen */
