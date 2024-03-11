@@ -8,9 +8,12 @@
     background-color: white;
   }
 
+  .construction-hint{
+    background-color: blanchedalmond;
+  }
+
   .topic-text{
     color: rgb(218, 149, 0);
-    width: 100%;
   }
 
   .masonry-box{
@@ -20,14 +23,9 @@
   .masonry-item{
     width: 250px;
     margin-bottom: 15px;
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .15);
+    box-shadow: 2px .30rem .4rem rgba(0, 0, 0, .15);
   }
   
-  /* Pagination */
-  .blog-pagination {
-    margin-bottom: 4rem;
-  }
-   
   /*
    * Footer
    */
