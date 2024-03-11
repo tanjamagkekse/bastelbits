@@ -1,29 +1,19 @@
 
-.card {
-    position: fixed;
-    overflow-y: auto;
-    height: 90%; 
-    width: 80%;
+
+.about-text { 
+    padding-top: 2%; 
 }
 
-.relative { 
-    position: relative; 
+.about-images img{
+    width: 100%;
 }
 
 h1{
     font-size: 400%;
+    padding-top: 3%;
 } 
 
-.about-text {
-    width: 50%; 
-    margin-left: 40%;
+.container{
+    background-color: blau;
+    margin-top: 5%;
 }
-
- .fixed img { 
-    position: fixed; 
-    width: 25%; 
-    border-radius: 10px;
-}
-
-
-
