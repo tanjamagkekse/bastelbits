@@ -1,14 +1,14 @@
 <div class="gray-bg"></div>
 
-<div class="article">
+<!-- if type is image -->
+<div class="article article-image" *ngIf="article?.type === 'image'" >
   <!-- Closing Button -->
   <a [routerLink]="['/home', { outlets: { aux: null } }]"
     class="btn btn-light button-position">
     X
   </a>
 
-  <!-- if type is image -->
-  <div *ngIf="article?.type === 'image'" class="article-inside-image card">
+  <div class="article-inside-image card">
     <c-carousel [dark]="true" [interval]="0" >
       <c-carousel-indicators></c-carousel-indicators>
       <c-carousel-inner>
@@ -29,17 +29,23 @@
       <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
     </c-carousel>
   </div>
-    
+</div>
 
-  <!-- if type is article -->
-  <div *ngIf="article?.type === 'text'" class="article-inside-text card">
+
+  <!-- if type is text -->
+<div class="article article-text" *ngIf="article?.type === 'text'" >
+  <!-- Closing Button -->
+  <a [routerLink]="['/home', { outlets: { aux: null } }]"
+    class="btn btn-light button-position">
+    X
+  </a>
+
+  <div class="article-inside-text card">
     <!-- Header -->
-    <header>
-      <div class='text-center m-5'> 
-        <h1 class="title">{{article?.title}}</h1>
-        <h4 class="snippet">{{article?.snippet}}</h4>
-      </div>
-    </header>
+    <div class='text-center m-5'> 
+      <h1 class="title">{{article?.title}}</h1>
+      <h2 class="snippet">{{article?.snippet}}</h2>
+    </div>
 
     <!-- Content -->
     <div *ngIf="article?.type === 'text'" class="card-body">   
