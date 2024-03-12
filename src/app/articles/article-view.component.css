@@ -65,8 +65,8 @@ header {
   align-items: center; /* Vertikal zentrieren */
 }
 
-.header-overlay-text {
-  color: white; /* Textfarbe */
-  text-align: center; /* Zentrierte Ausrichtung */
+/* .header-overlay-text {
+  color: white; 
+  text-align: center; 
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-}
+} */
