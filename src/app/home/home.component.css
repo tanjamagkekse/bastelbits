@@ -1,12 +1,30 @@
-  .blog-header{
-    position: sticky;
-    top: 0; /* Platziert den Header am oberen Bildschirmrand */
-    z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
-    width: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
-    background-color: white;
-  }
+.blog-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  background-color: white;
+  transition: padding 0.3s; /* Fügt eine Übergangseffekt für die Padding-Änderung hinzu */
+}
+
+.blog-header hr{
+  margin: 10px 0;
+}
+
+.blog-header-scrolled {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-size: 14px;
+}
+
+.blog-header-scrolled hr{
+  margin: 2px 0 0px 0;
+}
 
   .construction-hint{
     background-color: blanchedalmond;

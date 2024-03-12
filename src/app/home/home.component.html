@@ -1,19 +1,18 @@
 
-<header class="blog-header pt-3 mb-3">
-  <div class="py-2 ">
-    <nav class="d-flex justify-content-between">
-        <a class="font text-dark" href="#">Alle Themen</a>
-        <a class="font text-dark" href="#">Malen</a>
-        <a class="font text-dark" href="#">Holz</a>
-        <a class="font text-dark" href="#">Einrichtung</a>
-        <a class="font text-dark" href="#">Licht</a>
-        <a class="font text-dark" href="#">Dies Das</a>
-        <a class="font text-dark" href="#">
-            <i class="bi bi-search"></i>
-        </a>
-    </nav>
-  </div> 
-<hr></header>
+<header [ngClass]="{'blog-header-scrolled': isScrolled}" class="blog-header">
+  <nav class="d-flex justify-content-between">
+      <a class="font text-dark" href="#">Alle Themen</a>
+      <a class="font text-dark" href="#">Malen</a>
+      <a class="font text-dark" href="#">Holz</a>
+      <a class="font text-dark" href="#">Einrichtung</a>
+      <a class="font text-dark" href="#">Licht</a>
+      <a class="font text-dark" href="#">Dies Das</a>
+      <a class="font text-dark" href="#">
+          <i class="bi bi-search"></i>
+      </a>
+  </nav>
+  <hr>
+</header>
 
 <ngx-masonry [options]="masonryOptions" [ordered]="true" class="masonry-box">
   <div ngxMasonryItem class="masonry-item" >

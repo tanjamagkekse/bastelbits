@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterContentInit, Component, OnDestroy, OnInit, computed, signal } from '@angular/core';
+import { AfterContentInit, Component, ElementRef, HostListener, OnDestroy, OnInit, computed, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { IArticle } from '../articles/article';
 import { ArticleService } from '../articles/article.service';
@@ -20,6 +20,8 @@ export class HomeComponent implements OnInit, OnDestroy{
   twoRandomArticles: IArticle[] = [];
   lastArticle: IArticle | undefined;
   articlesReverse: IArticle[] = [];
+  isScrolled: boolean = false;
+
 	
   public masonryOptions: NgxMasonryOptions = {
 		gutter: 10,
@@ -29,7 +31,8 @@ export class HomeComponent implements OnInit, OnDestroy{
 	};
 
 
-  constructor(private articleService: ArticleService) {}
+  constructor(private articleService: ArticleService,
+              private elementRef: ElementRef) {}
   
   ngOnInit(): void {
     this.sub = this.articleService.getArticles().subscribe({
@@ -45,6 +48,12 @@ export class HomeComponent implements OnInit, OnDestroy{
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();
+  }
+
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
   }
 
   // Methode zum Zufälligauswählen von Artikeln
