@@ -30,8 +30,24 @@
     background-color: blanchedalmond;
   }
 
+  .card.hover {
+    transition: transform 0.2s;
+  }
+  
+  .card.hover:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
   .topic-text{
     color: rgb(218, 149, 0);
+    font-family: Reenie Beanie;
+    font-size: 25px;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    transform: rotate(14deg);
+    text-align: end;
+    display: block;
   }
 
   .masonry-box{
@@ -40,7 +56,8 @@
 
   .masonry-item{
     width: 250px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404)
   }
   
