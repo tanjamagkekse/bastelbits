@@ -2,16 +2,30 @@
 
 .about-text { 
     padding-top: 2%; 
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.about-images{
+    width: 70%;
+    margin-top: 7%;
 }
 
 .about-images img{
     width: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404)
+
 }
 
-h1{
+.about-text h1{
     font-size: 400%;
     padding-top: 3%;
+    font-weight: bold ;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.404);
 } 
+
 
 .container{
     background-color: blau;

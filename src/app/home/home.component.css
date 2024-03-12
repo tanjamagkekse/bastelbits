@@ -23,7 +23,7 @@
   .masonry-item{
     width: 250px;
     margin-bottom: 15px;
-    box-shadow: 2px .30rem .4rem rgba(0, 0, 0, .15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404)
   }
   
   /*
