@@ -8,7 +8,6 @@ export interface IArticle {
     snippet: string;
     content: string;
     thumbnailImageUrl: string;
-    headerImageUrl: string;
     images: string[];
   }
   

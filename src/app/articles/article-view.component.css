@@ -13,6 +13,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
+  width: 70%;
   position: fixed;
   z-index: 2010;
 }
@@ -29,7 +30,7 @@ c-carousel-item img{
   background-color: white;
   margin: 20px auto;
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: 95vh;
 }
 
 .button-position{
@@ -39,7 +40,7 @@ c-carousel-item img{
   border-radius: 50px;
   font-weight: bold;
   top: 10px;
-  right: 43%;
+  right: 48%;
   z-index: 2020;
 }
 
@@ -47,26 +48,6 @@ header {
   position: relative;
 }
 
-.header-image {
-  height: 300px; /* Höhe des Headers */
-  background-size: cover; /* Bild an die Größe anpassen */
-  background-position: center; /* Bild zentrieren */
-  position: relative; /* Position relativ für Overlay */
-} 
-
-.header-overlay {
-  position: absolute; /* Position absolut, um über dem Bild zu liegen */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center; /* Horizontal zentrieren */
-  align-items: center; /* Vertikal zentrieren */
+.snippet{
+  font-family: "Reenie Beanie";
 }
-
-/* .header-overlay-text {
-  color: white; 
-  text-align: center; 
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-} */

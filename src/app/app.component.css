@@ -14,8 +14,31 @@
     /* font-family: "Playfair Display", Georgia, "Times New Roman", serif; */
   }
   
-  .sidenav img {
+  /* .sidenav img {
     margin-right: 20px !important;
+  } */
+
+
+
+  .logo{
+    margin-bottom: 40px;
+    margin-left: 13px;
+    margin-top: 20px;
+  }
+
+  .title{
+    font-family: the-seasons;
+    font-style: normal;
+    font-size: 34px;
+    margin-bottom: 0px;
+  }
+
+  .subtitle{
+    font-family: "Reenie Beanie";
+    transform: rotate(-5deg);
+    display: block;
+    margin-top: -8px;
+    margin-left: -12px;
   }
 
   /* The navigation menu links */
@@ -26,8 +49,8 @@
     color: #818181;
     display: block;
   }
-  
-  /* When you mouse over the navigation links, change their color */
+
+    /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
   }
