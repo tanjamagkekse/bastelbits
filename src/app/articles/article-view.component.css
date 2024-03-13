@@ -60,3 +60,28 @@ c-carousel-item img{
 .title{
   font-size: 70px;
 }
+
+/* footer */
+
+.footer{
+  margin: 5px;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  font-family: "Reenie Beanie";
+  font-size: 27px;
+}
+
+.link-container {
+  display: inline-block;
+  transform: rotate(-20deg);
+  margin-left: 10px;
+  font-size: 41px;
+  color: rgb(218, 149, 0);
+  text-decoration: none;
+  margin-bottom: 50px;
+  margin-top: -20px;
+  cursor: pointer;
+}
