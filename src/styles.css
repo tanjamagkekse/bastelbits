@@ -16,3 +16,10 @@ h1, h2, h3, h4, h5, h6, .font {
     text-decoration: none;
   }
   
+.reenie {
+  font-family: "Reenie Beanie";
+}
+
+.orange {
+  color: rgb(218, 149, 0);
+}

@@ -20,12 +20,14 @@
 .about-text h1{
     font-size: 400%;
     padding-top: 3%;
-    font-weight: bold ;
     margin-bottom: 30px;
     text-align: center;
-    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.404);
 } 
 
+.welcome{
+    display: block;
+    transform: rotate(-3deg);
+}
 
 .container{
     background-color: blau;
