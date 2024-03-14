@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit, OnDestroy{
   articles: IArticle[] = [];
   twoRandomArticles: IArticle[] = [];
   lastArticle: IArticle | undefined;
-  articlesReverse: IArticle[] = [];
   isScrolled: boolean = false;
+  filter: string = '';
 
 	
   public masonryOptions: NgxMasonryOptions = {
@@ -37,8 +37,7 @@ export class HomeComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     this.sub = this.articleService.getArticles().subscribe({
       next: articles => {
-        this.articles = articles;
-        this.articlesReverse = articles.reverse();
+        this.articles = articles.reverse();
         // this.lastArticle = this.articles[this.articles.length - 1];
         // this.twoRandomArticles = this.selectRandomArticles(articles, 2);
       },
@@ -75,5 +74,14 @@ export class HomeComponent implements OnInit, OnDestroy{
       [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+  }
+
+  getFilteredArticles() {
+    return this.filter === ''
+      ? this.articles.slice().sort((a, b) => b.articleId - a.articleId)
+      : this.articles
+          .filter((article) => article.topic == this.filter)
+          .slice()
+          .sort((a, b) => b.articleId - a.articleId);
   }
 }
