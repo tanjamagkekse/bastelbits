@@ -1,0 +1,112 @@
+[
+  {
+    "articleId": 1,
+    "title": "Kork-Untersetzer",
+    "topic": "Malen",
+    "type": "text",
+    "creationDate": "02. August 2021",
+    "releaseDate": "12. März 2024",
+    "snippet": "Eines meiner längsten Projekte: 2021 habe ich über mehrere Monate ca. 80 Korkuntersetzer mit einem Brennkolben bemalt",
+    "content": "assets/images/kork_wedding/kork_wedding.html",
+    "thumbnailImageUrl": "assets/images/kork_wedding/kork_wedding_thumb.jpg",
+    "images": [ ]
+  },
+
+    {
+      "articleId": 2,
+      "title": "Phoniebox-Bemalung",
+      "topic": "Malen",
+      "type": "text",
+      "creationDate": "07. Februar 2023",
+      "releaseDate": "02. März 2024",
+      "snippet": "Kurzer Text.",
+      "content":  "<div class='example'> <div class='overlay-text'> <h1>Welcome to our Blog</h1> </div> </div> <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p> <hr> <p>Cum sociis natoque penatibus et magnis <a href='x'>dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p> <blockquote> <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> </blockquote> <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> <h2>Heading</h2> <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <h3>Sub-heading</h3> <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> <pre><code>Example code block</code></pre> <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p> <h3>Sub-heading</h3> <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> <ul> <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li> <li>Donec id elit non mi porta gravida at eget metus.</li> <li>Nulla vitae elit libero, a pharetra augue.</li> </ul> <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p> <ol> <li>Vestibulum id ligula porta felis euismod semper.</li> <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li> <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li> </ol> <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>",
+      "thumbnailImageUrl": "assets/images/phoniebox/phoniebox_thumb.jpg"
+    },
+
+    {
+      "articleId": 3,
+      "title": "Mein dritter Blog Artikel",
+      "topic": "Licht",
+      "type": "text",
+      "creationDate": "16. Februar 2023",
+      "releaseDate": "03. März 2024",
+      "snippet": "Kurzer Text.",
+      "content": "Langer Text",
+      "thumbnailImageUrl": "http://placehold.it/300"
+    },
+    {
+      "articleId": 4,
+      "title": "Adventure Awaits ...",
+      "topic": "Malen",
+      "type": "image",
+      "releaseDate": "10. März 2024",
+      "creationDate": "01. Oktober 2022",
+      "snippet": "Ein Gutschein für einen Rafting/Wanderurlaub",
+      "content": "",
+      "thumbnailImageUrl": "assets/images/malen/adventure_awaits_thumb.jpg",
+      "images": [
+        "assets/images/malen/adventure_awaits_04.jpg",
+        "assets/images/malen/adventure_awaits_01.jpg",
+        "assets/images/malen/adventure_awaits_02.jpg",
+        "assets/images/malen/adventure_awaits_03.jpg"
+        ]
+    },
+
+    {
+      "articleId": 5,
+      "title": "Mein vierter Blog Artikel",
+      "topic": "Licht",
+      "type": "text",
+      "creationDate": "16. Februar 2023",
+      "releaseDate": "04. März 2024",
+      "snippet": "Kurzer Text.",
+      "content": "Lorem ipsum dolor sit amet dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur",
+      "thumbnailImageUrl": "http://placehold.it/300"
+    },
+
+    {
+      "articleId": 6,
+      "title": "Mein fünfter Blog Artikel",
+      "topic": "Licht",
+      "type": "text",
+      "creationDate": "16. Februar 2023",
+      "releaseDate": "05. März 2024",
+      "snippet": "Das ist mein fünfter Blog-Beitrag und hier steht toller Text",
+      "content": "Lorem ipsum dolor sit amet dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur",
+      "thumbnailImageUrl": "http://placehold.it/300"
+    },
+    {
+      "articleId": 7,
+      "title": "Surf House",
+      "topic": "Malen",
+      "type": "image",
+      "releaseDate": "10. März 2024",
+      "creationDate": "28. Juli 2021",
+      "snippet": "Geburtstagskarte für einen Surfer",
+      "content": "",
+      "thumbnailImageUrl": "assets/images/malen/surf_house_thumb.jpg",
+      "images": [
+        "assets/images/malen/surf_house_01.jpg"
+        ]
+    },
+
+
+    {
+      "articleId": 8,
+      "title": "Barcelona",
+      "topic": "Malen",
+      "type": "image",
+      "releaseDate": "09. März 2024",
+      "creationDate": "16. Februar 2023",
+      "snippet": "Ein Gutschein für eine Reise nach Barcelona",
+      "content": "",
+      "thumbnailImageUrl": "assets/images/malen/barcelona_blue_thumb.jpg",
+      "images": [
+        "assets/images/malen/barcelona_blue_03.jpg",
+        "assets/images/malen/barcelona_blue_01.jpg",
+        "assets/images/malen/barcelona_blue_02.jpg"
+        ]
+    }
+
+  ]
