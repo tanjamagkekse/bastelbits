@@ -1,0 +1,63 @@
+<div class="gray-bg"></div>
+
+<!-- if type is image -->
+<div class="article article-image" *ngIf="article?.type === 'image'" >
+  <!-- Closing Button -->
+  <a [routerLink]="['/home', { outlets: { aux: null } }]"
+    class="btn btn-light button-position">
+    X
+  </a>
+
+  <div class="article-inside-image card">
+    <c-carousel [dark]="true" [interval]="0" >
+      <c-carousel-indicators></c-carousel-indicators>
+      <c-carousel-inner>
+        <!-- iterate through all images in array -->
+        <c-carousel-item *ngFor="let image of article?.images">
+          <img
+            alt="{{article?.title}}"
+            loading="lazy"
+            [src]=image
+          />
+          <!-- <c-carousel-caption class="d-none d-md-block">
+            <h3>{{article?.title}}</h3>
+            <p>{{article?.snippet}}</p>
+          </c-carousel-caption> -->
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
+  </div>
+</div>
+
+
+  <!-- if type is text -->
+<div class="article article-text" *ngIf="article?.type === 'text'" >
+  <!-- Closing Button -->
+  <a [routerLink]="['/home', { outlets: { aux: null } }]"
+    class="btn btn-light button-position">
+    X
+  </a>
+
+  <div class="article-inside-text card">
+    <!-- Header -->
+    <div class='text-center m-5'> 
+      <h1 class="title">{{article?.title}}</h1>
+      <h2 class="snippet">{{article?.snippet}}</h2>
+    </div>
+
+    <!-- Content -->
+    <div *ngIf="article?.type === 'text'" class="card-body">   
+      <div class="mb-4" [innerHTML]=article?.content></div>
+    </div>
+
+    <div class="footer">
+      <h3>Falls ihr es ausprobieren mögt, wünsche ich euch viel Spaß dabei!</h3>
+      <p>
+        bei Fragen, Kommentaren, Anmerkungen - schreibt mir sehr gerne
+        <span class="link-container" routerLink='/contact'>hier</span>
+      </p>
+    </div>
+  </div>
+</div>

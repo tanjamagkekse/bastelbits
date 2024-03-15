@@ -1,0 +1,55 @@
+
+<div class="sidenav d-flex flex-column flex-shrink-0 p-2 text-white">
+  <!-- <img class="logo" src="assets/images/logo/logo_white_03.png" alt="logo"> -->
+  <div class="logo">
+    <span class="welcome">Willkommen bei</span>
+
+    <h1 class="title">{{title}}</h1>
+    <span class="subtitle">handgemacht & hochgeladen</span>
+
+  </div>
+
+  <!-- <hr> -->
+  <ul class="nav flex-column mb-auto">
+    <li class="nav-item" >
+      <!-- routerLinkActive is a directive -->
+      <a class="nav-link" routerLink='/home' routerLinkActive='active'>
+        <i class="bi me-2 bi-house-door"></i>
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link" routerLink='/about' routerLinkActive='active'>
+        <i class="bi me-2 bi-lightbulb"></i>
+        <span>About</span>
+      </a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link" routerLink='/timeline' routerLinkActive='active'>
+        <i class="bi me-2 bi-list-ul"></i>
+        <span>Timeline</span>
+      </a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link" routerLink='/skills' routerLinkActive='active'>
+        <i class="bi me-2 bi-tools"></i>
+        <span>Skills</span>
+      </a>
+    </li>
+  </ul>
+  
+  <ul class="nav latest">
+    <li class="nav-item " >
+      <a class="nav-link" routerLink='/release-notes' routerLinkActive='active'>
+        <i class="bi me-2 bi-pencil"></i>
+        <span>Änderungen</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class='main'>
+  <router-outlet></router-outlet>
+  <router-outlet name="aux"></router-outlet>
+</div>
+

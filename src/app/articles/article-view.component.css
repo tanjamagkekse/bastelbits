@@ -1,0 +1,87 @@
+.gray-bg {
+  opacity: 0.6;
+  background-color: black;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2000;
+}
+
+.button-position{
+  position: fixed;
+  background: lightgray;
+  color: black;
+  border-radius: 50px;
+  font-weight: bold;
+  top: 10px;
+  right: 48%;
+  z-index: 2020;
+}
+
+.article {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  position: fixed;
+  z-index: 2010;
+}
+
+
+/* images */
+.article-inside-image {
+  margin: 20px auto;
+}
+
+c-carousel-item img{
+  height: 95vh;
+}
+
+
+
+/* text */
+.article-text{
+  width: 90%;
+}
+
+.article-inside-text {
+  background-color: white;
+  margin: 20px auto;
+  overflow-y: auto;
+  max-height: 95vh;
+}
+
+.snippet{
+  font-family: "Reenie Beanie";
+  font-size: 40px;
+}
+
+.title{
+  font-size: 70px;
+}
+
+/* footer */
+
+.footer{
+  margin: 5px;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  font-family: "Reenie Beanie";
+  font-size: 27px;
+}
+
+.link-container {
+  display: inline-block;
+  transform: rotate(-20deg);
+  margin-left: 10px;
+  font-size: 41px;
+  color: rgb(218, 149, 0);
+  text-decoration: none;
+  margin-bottom: 50px;
+  margin-top: -20px;
+  cursor: pointer;
+}

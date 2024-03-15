@@ -1,0 +1,56 @@
+
+<header [ngClass]="{'blog-header-scrolled': isScrolled}" class="blog-header">
+  <nav class="d-flex justify-content-between">
+      <a class="font text-dark" (click)="filter=''">Alle Themen</a>
+      <a class="font text-dark" (click)="filter='Malen'">Malen</a>
+      <a class="font text-dark" (click)="filter='Holz'">Holz</a>
+      <a class="font text-dark" (click)="filter='Einrichtung'">Einrichtung</a>
+      <a class="font text-dark" (click)="filter='Licht'">Licht</a>
+      <a class="font text-dark" (click)="filter='Dies Das'">Dies Das</a>
+      <a class="font text-dark">
+          <i class="bi bi-search"></i>
+      </a>
+  </nav>
+  <hr>
+</header>
+
+<ngx-masonry [options]="masonryOptions" [ordered]="true" class="masonry-box">
+  <div ngxMasonryItem class="masonry-item" >
+    <div class="card">
+      <div class="card-body construction-hint">
+        <h5 class="card-title">Die Seite befindet sich gerade im Aufbau</h5>
+        <p class="card-text">Deswegen guck' gerne immer mal wieder rein. Hier tut sich fast täglich was 😊</p>
+        <p class="card-text">
+          <small class="text-muted"><a href="https://github.com/tanjamagkekse/my_website" class="text-dark">Mehr Infos bei Github... </a></small>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div ngxMasonryItem class="masonry-item"  *ngFor="let article of getFilteredArticles()">
+    <div class="card hover" [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]" >
+      <img class="card-img-top" src={{article.thumbnailImageUrl}} alt={{article.title}}>
+      <div class="card-body pt-0">
+        <strong class="topic-text">{{article.topic}}</strong>
+        <h5 class="card-title">{{article.title}}</h5>
+        <p class="card-text">{{article.snippet}}</p>
+        <p class="card-text text-end">
+          <small class="text-muted">vom {{article.creationDate}}</small>
+        </p>
+        <!-- <button type="button" class="btn btn-light float-end" [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]">...weiterlesen</button> -->
+      </div>
+    </div>
+  </div>
+</ngx-masonry>
+
+<nav class="m-4 text-center">
+  <a class="btn btn-light" href="#">Older</a>
+  <a class="btn btn-light disabled" href="#">Newer</a>
+</nav>
+    
+<footer class="blog-footer">
+  <p>Some Text</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
