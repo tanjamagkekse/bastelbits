@@ -31,8 +31,7 @@ export class HomeComponent implements OnInit, OnDestroy{
 	};
 
 
-  constructor(private articleService: ArticleService,
-              private elementRef: ElementRef) {}
+  constructor(private articleService: ArticleService){}
   
   ngOnInit(): void {
     this.sub = this.articleService.getArticles().subscribe({
@@ -49,11 +48,6 @@ export class HomeComponent implements OnInit, OnDestroy{
     this.sub.unsubscribe();
   }
 
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.isScrolled = window.scrollY > 0;
-  }
 
   // Methode zum Zufälligauswählen von Artikeln
   private selectRandomArticles(articles: IArticle[], count: number): IArticle[] {
@@ -83,5 +77,10 @@ export class HomeComponent implements OnInit, OnDestroy{
           .filter((article) => article.topic == this.filter)
           .slice()
           .sort((a, b) => b.articleId - a.articleId);
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 2;
   }
 }

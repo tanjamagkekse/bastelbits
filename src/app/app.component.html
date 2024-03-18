@@ -1,6 +1,55 @@
 
-<div class="sidenav d-flex flex-column flex-shrink-0 p-2 text-white">
-  <!-- <img class="logo" src="assets/images/logo/logo_white_03.png" alt="logo"> -->
+<div>
+<mat-toolbar class="mat-toolbar" [ngClass]="{ 'scrolled': isScrolled }">
+  <button mat-icon-button aria-label="Menu icon" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <div class="logo">
+    <span class="welcome" [class.hidden]="isScrolled">Willkommen bei</span>
+    <h1 class="title">{{title}}</h1>
+    <span class="subtitle" [class.hidden]="isScrolled">handgemacht & hochgeladen</span>
+  </div>
+
+  <div>
+    <i class="bi bi-search"></i>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav class="sidebar" [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'">
+    <mat-nav-list class="mt-5">
+      <a mat-list-item>
+        <span class="entry link" routerLink='/home' routerLinkActive='active'>
+          <i class="bi me-2 bi-house-door"></i>
+          <span>Home</span>
+        </span>
+      </a>
+      <a mat-list-item>
+        <span class="entry link" routerLink='/about' routerLinkActive='active'>
+          <i class="bi me-2 bi-lightbulb"></i>
+          <span>About</span>
+        </span>
+      </a>
+    </mat-nav-list>
+<hr>
+    <mat-nav-list class="latest">
+      <a mat-list-item>
+        <span class="entry link" routerLink='/release-notes' routerLinkActive='active'>
+          <i class="bi me-2 bi-pencil"></i>
+          <span>Änderungen</span>
+        </span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    <router-outlet name="aux"></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</div>
+<!-- <div class="sidenav d-flex flex-column flex-shrink-0 p-2 text-white">
   <div class="logo">
     <span class="welcome">Willkommen bei</span>
 
@@ -9,10 +58,8 @@
 
   </div>
 
-  <!-- <hr> -->
   <ul class="nav flex-column mb-auto">
     <li class="nav-item" >
-      <!-- routerLinkActive is a directive -->
       <a class="nav-link" routerLink='/home' routerLinkActive='active'>
         <i class="bi me-2 bi-house-door"></i>
         <span>Home</span>
@@ -46,10 +93,10 @@
       </a>
     </li>
   </ul>
-</div>
+</div> -->
 
-<div class='main'>
+<!-- <div class='main'>
   <router-outlet></router-outlet>
   <router-outlet name="aux"></router-outlet>
-</div>
+</div> -->
 

@@ -1,6 +1,6 @@
 .blog-header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 100px;
   z-index: 1000;
   width: 100%;
   padding-right: 40px;
@@ -20,6 +20,7 @@
   padding-top: 5px;
   padding-bottom: 0px;
   font-size: 14px;
+  top: 60px;
 }
 
 .blog-header-scrolled hr{
@@ -52,6 +53,7 @@
 
   .masonry-box{
     margin-left: 20px;
+    top: 60px;
   }
 
   .masonry-item{

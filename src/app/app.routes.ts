@@ -19,20 +19,20 @@ export const routes: Routes = [
       loadChildren: () => import('./home/home.component.routes')
     },    
 
-    { 
-      path: 'skills', 
-      component: SkillsComponent
-    },
+    // { 
+    //   path: 'skills', 
+    //   component: SkillsComponent
+    // },
 
     { 
       path: 'about', 
       component: AboutComponent
     },
 
-    { 
-      path: 'timeline', 
-      component: TimelineComponent
-    },
+    // { 
+    //   path: 'timeline', 
+    //   component: TimelineComponent
+    // },
 
     { 
       path: 'release-notes', 
