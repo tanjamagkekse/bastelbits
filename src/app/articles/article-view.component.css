@@ -23,11 +23,10 @@
 .article {
   left: 50%;
   transform: translateX(-50%);
-  top: 0;
+  top: 100px;
   position: fixed;
   z-index: 2010;
 }
-
 
 /* images */
 .article-inside-image {
@@ -35,7 +34,7 @@
 }
 
 c-carousel-item img{
-  height: 95vh;
+  height: 80vh;
 }
 
 
