@@ -34,7 +34,8 @@
 }
 
 c-carousel-item img{
-  height: 80vh;
+  max-height: 80vh;
+  max-width: 100vw;
 }
 
 
