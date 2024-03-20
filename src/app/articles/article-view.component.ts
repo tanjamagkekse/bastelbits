@@ -20,7 +20,7 @@ import { Subscription } from 'rxjs';
 export class ArticleViewComponent implements OnInit {
   pageTitle = 'Article Detail';
   errorMessage = '';
-  article: IArticle | undefined;
+  article: IArticle | undefined; 
   currentImageIndex: number = 0;
   private articleSubscription: Subscription | undefined;
 
