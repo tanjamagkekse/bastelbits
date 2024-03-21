@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterContentInit, Component, ElementRef, HostListener, OnDestroy, OnInit, computed, signal } from '@angular/core';
+import { AfterContentInit, Component, ElementRef, HostListener, OnDestroy, OnInit, Renderer2, computed, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { IArticle } from '../articles/article';
 import { ArticleService } from '../articles/article.service';

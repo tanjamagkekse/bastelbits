@@ -31,7 +31,8 @@ export class AppComponent implements OnInit{
 
 
   constructor(private observer: BreakpointObserver,
-              private overlayService: OverlayService) {}
+              private overlayService: OverlayService,
+              private renderer: Renderer2) {}
 
 
   ngOnInit() {
@@ -44,6 +45,11 @@ export class AppComponent implements OnInit{
     });
     this.overlayService.overlayStatus$.subscribe(status => {
       this.isOverlayOpen = status;
+      if (this.isOverlayOpen) {
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
+      } else {
+        this.renderer.setStyle(document.body, 'overflow', 'auto');
+      }
     });
   }
 
