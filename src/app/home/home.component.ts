@@ -5,6 +5,7 @@ import { IArticle } from '../articles/article';
 import { ArticleService } from '../articles/article.service';
 import { Subscription } from 'rxjs';
 import { NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
+import { OverlayService } from './overlay.service';
 
 @Component({
   selector: 'app-home',
@@ -14,14 +15,14 @@ import { NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy{
-  sub!: Subscription;
+  articleServiceSub!: Subscription;
   errorMessage = '';
   articles: IArticle[] = [];
   twoRandomArticles: IArticle[] = [];
   lastArticle: IArticle | undefined;
   isScrolled: boolean = false;
   filter: string = '';
-
+  isOverlayOpen: boolean = false;
 	
   public masonryOptions: NgxMasonryOptions = {
 		gutter: 10,
@@ -30,11 +31,11 @@ export class HomeComponent implements OnInit, OnDestroy{
 		fitWidth: true
 	};
 
-
-  constructor(private articleService: ArticleService){}
+  constructor(private articleService: ArticleService,
+              private overlayService: OverlayService){}
   
   ngOnInit(): void {
-    this.sub = this.articleService.getArticles().subscribe({
+    this.articleServiceSub = this.articleService.getArticles().subscribe({
       next: articles => {
         this.articles = articles.reverse();
         // this.lastArticle = this.articles[this.articles.length - 1];
@@ -42,10 +43,13 @@ export class HomeComponent implements OnInit, OnDestroy{
       },
       error: err => this.errorMessage = err
     });
+    this.overlayService.overlayStatus$.subscribe(status => {
+      this.isOverlayOpen = status;
+    });
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+    this.articleServiceSub.unsubscribe();
   }
 
 

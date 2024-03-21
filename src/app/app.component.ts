@@ -8,6 +8,7 @@ import {MatSidenav, MatSidenavContainer, MatSidenavModule} from '@angular/materi
 import {MatButtonModule} from '@angular/material/button';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { CdkScrollable } from '@angular/cdk/scrolling';
+import { OverlayService } from './home/overlay.service';
 
 
 @Component({
@@ -23,13 +24,14 @@ export class AppComponent implements OnInit{
   
   isMobile= true;  
   isScrolled: boolean = false;
+  isOverlayOpen: boolean = false; 
 
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
   @ViewChild(CdkScrollable) scrollable: CdkScrollable | undefined;
 
 
-  constructor(private observer: BreakpointObserver, 
-              private renderer: Renderer2) {}
+  constructor(private observer: BreakpointObserver,
+              private overlayService: OverlayService) {}
 
 
   ngOnInit() {
@@ -40,6 +42,9 @@ export class AppComponent implements OnInit{
         // this.isMobile = false;
       }
     });
+    this.overlayService.overlayStatus$.subscribe(status => {
+      this.isOverlayOpen = status;
+    });
   }
 
   toggleMenu() {
@@ -49,6 +54,5 @@ export class AppComponent implements OnInit{
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 15;
-    console.log(window.scrollY)
   }
 }

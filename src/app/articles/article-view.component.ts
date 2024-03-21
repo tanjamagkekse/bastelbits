@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { AfterContentInit, Component, Inject, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, Inject, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ArticleService } from './article.service';
 import { IArticle } from './article';
 import { CarouselModule } from '@coreui/angular';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
+import { OverlayService } from '../home/overlay.service';
 
 
 @Component({
@@ -17,7 +18,7 @@ import { Subscription } from 'rxjs';
 })
 
 
-export class ArticleViewComponent implements OnInit {
+export class ArticleViewComponent implements OnInit, OnDestroy {
   pageTitle = 'Article Detail';
   errorMessage = '';
   article: IArticle | undefined; 
@@ -27,7 +28,8 @@ export class ArticleViewComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private articleService: ArticleService,
-              private http: HttpClient) {
+              private http: HttpClient,
+              private overlayService: OverlayService) {
   }
 
   ngOnInit(): void {
@@ -35,6 +37,7 @@ export class ArticleViewComponent implements OnInit {
     if (id) {
       this.getArticle(id);
     }
+    this.overlayService.setOverlayStatus(true);
   }
 
   ngOnDestroy(): void {
@@ -42,6 +45,7 @@ export class ArticleViewComponent implements OnInit {
     if (this.articleSubscription) {
       this.articleSubscription.unsubscribe();
     }
+    this.overlayService.setOverlayStatus(false);
   }
   // getArticle(id: number): void {
   //   this.articleService.getArticleById(id).subscribe({

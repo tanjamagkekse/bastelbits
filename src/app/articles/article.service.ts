@@ -10,16 +10,11 @@ import { IArticle } from "./article";
 export class ArticleService {
     //TODO add server
     private articleUrl = 'assets/blog_articles.json';
-
   
     constructor(private http: HttpClient) { }
     
     getArticles(): Observable<IArticle[]> {
-        return this.http.get<IArticle[]>(this.articleUrl)
-        .pipe(
-            tap(data => console.log('All: ', JSON.stringify(data))),
-            catchError(this.handleError)
-        );
+        return this.http.get<IArticle[]>(this.articleUrl);
     }
 
     // Get one article

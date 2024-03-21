@@ -1,5 +1,5 @@
 
-<header [ngClass]="{'blog-header-scrolled': isScrolled}" class="blog-header">
+<header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
   <nav class="d-flex justify-content-between">
       <a class="font text-dark" (click)="filter=''">Alle Themen</a>
       <a class="font text-dark" (click)="filter='Malen'">Malen</a>
@@ -34,7 +34,6 @@
         <p class="card-text text-end">
           <small class="text-muted">vom {{article.creationDate}}</small>
         </p>
-        <!-- <button type="button" class="btn btn-light float-end" [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]">...weiterlesen</button> -->
       </div>
     </div>
   </div>
