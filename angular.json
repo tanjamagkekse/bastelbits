@@ -21,8 +21,8 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
               "src/assets",
+              "src/favicon.ico",
               "src/CNAME"
             ],
             "styles": [
@@ -82,8 +82,8 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
               "src/assets",
+              "src/favicon.ico",
               "src/CNAME"
             ],
             "styles": [
