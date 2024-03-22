@@ -1,59 +1,21 @@
-.mat-toolbar{
+
+/* toolbar with logo */
+
+ .mat-toolbar{
   position:fixed;
   top:0;
   z-index: 2;
   display: flex;
   justify-content: space-between; /* Setzt den Abstand zwischen den Elementen */
   align-items: center; /* Zentriert den Inhalt vertikal */
-  background-color: #f1f1f1;
   height: 100px;  
   transition: height 0.6s ease; /* Übergangseffekt für eine sanfte Animation */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226)
-}
-
-
-.mat-toolbar.scrolled {
-  height: 60px; /* Angepasste Höhe der Toolbar, wenn gescrollt wird */
-}
-
-mat-sidenav-container {
-  height:100%;
-}
-
-.mat-drawer.mat-drawer-side {
-  position: fixed;
-}
-
-/* /ove the content down so that it won't be hidden by the toolbar */
-mat-sidenav {
-  position: fixed;
-  padding-top: 3.5rem;
-  @media screen and (min-width: 600px) {
-    padding-top: 4rem;
-  }
-
-  .entry{
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding:0.75rem;
-  }
-}
-
-/* Move the content down so that it won't be hidden by the toolbar */
-.mat-sidenav-content{
-  padding-top: 7rem;
-  @media screen and (min-width: 600px) {
-      padding-top: 7,5rem;
-  }
-}
-
-.black{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
   background-color: #0b0b22;
 }
 
-.sidebar{
-  background-color: #f1f1f1
+.mat-toolbar.scrolled {
+  height: 60px; /* Angepasste Höhe der Toolbar, wenn gescrollt wird */
 }
 
 .hidden {
@@ -89,12 +51,46 @@ mat-sidenav {
   margin-top: -8px;
 }
 
+/* sidenav */
+
+mat-sidenav-container {
+  height:100%;
+}
+
+.mat-drawer.mat-drawer-side {
+  position: fixed;
+}
+
+/* /ove the content down so that it won't be hidden by the toolbar */
+mat-sidenav {
+  position: fixed;
+  padding-top: 4rem;
+
+  .entry{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.5em 1.5em 0.5em 0;
+      text-decoration: none;
+      display: block;
+      font-size: 18px;
+  }
+}
+
+/* Move the content down so that it won't be hidden by the toolbar */
+.mat-sidenav-content{
+  padding-top: 7rem;
+  @media screen and (min-width: 600px) {
+      padding-top: 7,5rem;
+  }
+}
+
+.sidebar{
+  background-color: #f1f1f1
+}
+
 .link {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
   color: black;
-  display: block;
-  font-size: 18px;
 }
 
 .link:hover {
