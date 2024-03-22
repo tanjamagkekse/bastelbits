@@ -1,5 +1,5 @@
 
-<header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
+<!-- <header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
   <nav class="d-flex justify-content-between">
       <a class="font text-dark" (click)="filter=''">Alle Themen</a>
       <a class="font text-dark" (click)="filter='Malen'">Malen</a>
@@ -7,6 +7,20 @@
       <a class="font text-dark" (click)="filter='Einrichtung'">Einrichtung</a>
       <a class="font text-dark" (click)="filter='Licht'">Licht</a>
       <a class="font text-dark" (click)="filter='Dies Das'">Dies Das</a>
+  </nav>
+  <hr>
+</header> -->
+
+<header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
+  <nav class="d-flex justify-content-between">
+    <ng-container *ngFor="let item of navigationItems">
+      <a class="font text-dark" (click)="filter = item.filter">
+        <ng-container *ngIf="isSmallScreen$ | async; else showText">
+          <i class="bi" [ngClass]="item.iconClass"></i>
+        </ng-container>
+        <ng-template #showText>{{ item.text }}</ng-template>
+      </a>
+    </ng-container>
   </nav>
   <hr>
 </header>

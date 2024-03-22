@@ -3,9 +3,10 @@ import { AfterContentInit, Component, ElementRef, HostListener, OnDestroy, OnIni
 import { RouterModule } from '@angular/router';
 import { IArticle } from '../articles/article';
 import { ArticleService } from '../articles/article.service';
-import { Subscription } from 'rxjs';
+import { map, Observable, shareReplay, Subscription } from 'rxjs';
 import { NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 import { OverlayService } from './overlay.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,15 @@ export class HomeComponent implements OnInit, OnDestroy{
   isScrolled: boolean = false;
   filter: string = '';
   isOverlayOpen: boolean = false;
+
+  navigationItems = [
+    { text: 'Alle Themen', filter: '', iconClass: 'bi bi-infinity' },
+    { text: 'Malen', filter: 'Malen', iconClass: 'bi bi-brush' },
+    { text: 'Holz', filter: 'Holz', iconClass: 'bi bi-tools' },
+    { text: 'Einrichtung', filter: 'Einrichtung', iconClass: 'bi bi-house-heart' },
+    { text: 'Licht', filter: 'Licht', iconClass: 'bi bi-lamp' },
+    { text: 'Dies Das', filter: 'Dies Das', iconClass: 'bi bi-collection' },
+  ];
 	
   public masonryOptions: NgxMasonryOptions = {
 		gutter: 10,
@@ -32,7 +42,8 @@ export class HomeComponent implements OnInit, OnDestroy{
 	};
 
   constructor(private articleService: ArticleService,
-              private overlayService: OverlayService){}
+              private overlayService: OverlayService,
+              private breakpointObserver: BreakpointObserver){}
   
   ngOnInit(): void {
     this.articleServiceSub = this.articleService.getArticles().subscribe({
@@ -47,6 +58,12 @@ export class HomeComponent implements OnInit, OnDestroy{
       this.isOverlayOpen = status;
     });
   }
+
+  isSmallScreen$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.XSmall])
+  .pipe(
+    map(result => result.matches),
+    shareReplay()
+  );
 
   ngOnDestroy(): void {
     this.articleServiceSub.unsubscribe();

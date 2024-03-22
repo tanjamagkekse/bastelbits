@@ -28,52 +28,52 @@
   margin: 2px 0 0px 0;
 }
 
-  .construction-hint{
-    background-color: blanchedalmond;
-  }
+.construction-hint{
+  background-color: blanchedalmond;
+}
 
-  .card.hover {
-    transition: transform 0.2s;
-  }
-  
-  .card.hover:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+.card.hover {
+  transition: transform 0.2s;
+}
 
-  .topic-text{
-    color: rgb(218, 149, 0);
-    font-family: Reenie Beanie;
-    font-size: 25px;
-    margin-top: -25px;
-    margin-bottom: 20px;
-    transform: rotate(14deg);
-    text-align: end;
-    display: block;
-  }
+.card.hover:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
-  .masonry-box{
-    margin-left: 20px;
-    margin-top: 60px;
-  }
+.topic-text{
+  color: rgb(218, 149, 0);
+  font-family: Reenie Beanie;
+  font-size: 25px;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  transform: rotate(14deg);
+  text-align: end;
+  display: block;
+}
 
-  .masonry-item{
-    width: 250px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404)
-  }
-  
-  /*
-   * Footer
-   */
-  .blog-footer {
-    padding: 2.5rem 0;
-    color: #999;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
-  }
-  .blog-footer p:last-child {
-    margin-bottom: 0;
-  }
+.masonry-box{
+  margin: auto;
+  margin-top: 60px;
+}
+
+.masonry-item{
+  width: 250px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404)
+}
+
+/*
+  * Footer
+  */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
