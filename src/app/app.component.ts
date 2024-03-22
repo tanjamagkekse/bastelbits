@@ -1,6 +1,6 @@
 import { Component, Renderer2, ViewChild, HostListener, AfterViewInit, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NavigationStart, Router, RouterEvent, RouterModule } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
@@ -29,10 +29,11 @@ export class AppComponent implements OnInit{
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
   @ViewChild(CdkScrollable) scrollable: CdkScrollable | undefined;
 
-
   constructor(private observer: BreakpointObserver,
               private overlayService: OverlayService,
-              private renderer: Renderer2) {}
+              private renderer: Renderer2,
+              private router: Router) {
+              }
 
 
   ngOnInit() {
@@ -43,12 +44,21 @@ export class AppComponent implements OnInit{
         // this.isMobile = false;
       }
     });
+    
+    //listens to overlay service and hide logo parts if image is scrolled
     this.overlayService.overlayStatus$.subscribe(status => {
       this.isOverlayOpen = status;
       if (this.isOverlayOpen) {
         this.renderer.setStyle(document.body, 'overflow', 'hidden');
       } else {
         this.renderer.setStyle(document.body, 'overflow', 'auto');
+      }
+    });
+
+    // close sidenav if navigation starts
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this.sidenav.close();
       }
     });
   }
