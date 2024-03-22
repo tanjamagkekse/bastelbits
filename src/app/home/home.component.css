@@ -13,6 +13,10 @@
   transition: padding 0.3s; /* Fügt eine Übergangseffekt für die Padding-Änderung hinzu */
 }
 
+.blog-header a{
+  cursor: pointer;
+}
+
 .blog-header hr{
   margin: 10px 0;
 }
