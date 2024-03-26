@@ -14,6 +14,7 @@ export const article_routes: Routes = [
       component: ArticleViewComponent,
       outlet: 'aux',
     },
+
   ];
 
 export default article_routes;
