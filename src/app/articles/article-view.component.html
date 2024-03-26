@@ -1,5 +1,6 @@
 <div class="gray-bg"></div>
 
+
 <!-- if type is image -->
 <div class="article article-image" *ngIf="article?.type === 'image'" >
   <!-- Closing Button -->
@@ -7,29 +8,7 @@
     class="btn btn-light button-position">
     X
   </a>
-
-  <div class="article-inside-image card">
-    <c-carousel [dark]="true" [interval]="0" >
-      <c-carousel-indicators></c-carousel-indicators>
-      <c-carousel-inner>
-        <!-- iterate through all images in array -->
-        <c-carousel-item *ngFor="let image of article?.images">
-          <img
-            alt="{{article?.title}}"
-            loading="lazy"
-            [src]=image
-          />
-          <!-- <c-carousel-caption class="d-none d-md-block">
-            <h3>{{article?.title}}</h3>
-            <p>{{article?.snippet}}</p>
-          </c-carousel-caption> -->
-        </c-carousel-item>
-      </c-carousel-inner>
-      <!-- Display the controls only if there is more than one image -->
-      <c-carousel-control *ngIf="article && article.images && article.images.length > 1" [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-      <c-carousel-control *ngIf="article && article.images && article.images.length > 1" [routerLink] caption="Next" direction="next"></c-carousel-control>
-    </c-carousel>
-  </div>
+  <app-carousel [article]="article"></app-carousel>
 </div>
 
 

@@ -28,18 +28,6 @@
   z-index: 2010;
 }
 
-/* images */
-.article-inside-image {
-  margin: 20px auto;
-}
-
-c-carousel-item img{
-  max-height: 88vh;
-  max-width: 100vw;
-}
-
-
-
 /* text */
 .article-text{
   width: 90%;

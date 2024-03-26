@@ -3,26 +3,24 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ArticleService } from './article.service';
 import { IArticle } from './article';
-import { CarouselModule } from '@coreui/angular';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 import { OverlayService } from '../home/overlay.service';
+import { CarouselComponent } from "../carousel/carousel.component";
 
 
 @Component({
-  selector: 'app-article-view',
-  standalone: true,
-  imports: [CommonModule, RouterModule, CarouselModule],
-  templateUrl: './article-view.component.html',
-  styleUrl: './article-view.component.css'
+    selector: 'app-article-view',
+    standalone: true,
+    templateUrl: './article-view.component.html',
+    styleUrl: './article-view.component.css',
+    imports: [CommonModule, RouterModule, CarouselComponent]
 })
 
 
 export class ArticleViewComponent implements OnInit, OnDestroy {
-  pageTitle = 'Article Detail';
   errorMessage = '';
   article: IArticle | undefined; 
-  currentImageIndex: number = 0;
   private articleSubscription: Subscription | undefined;
 
 
@@ -65,12 +63,7 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
     });
   }
 
-  //used by carousel to get the nextImage of the array
-  nextImage(): void {
-    if (this.article && this.article.images) {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.article.images.length;
-    }
-  }
+
 
   ngOnDestroy(): void {
     if (this.articleSubscription) {
