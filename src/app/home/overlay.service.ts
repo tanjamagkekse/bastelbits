@@ -9,8 +9,6 @@ export class OverlayService {
   private overlayStatusSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   public overlayStatus$: Observable<boolean> = this.overlayStatusSubject.asObservable();
 
-  constructor() {}
-
   setOverlayStatus(status: boolean) {
     this.overlayStatusSubject.next(status);
   }

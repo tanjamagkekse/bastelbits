@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, .font {
     font-family: the-seasons, Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
+
+.seasons {
+  font-family: "the-seasons";
+}
   
 .reenie {
   font-family: "Reenie Beanie";
@@ -23,5 +27,8 @@ h1, h2, h3, h4, h5, h6, .font {
 .orange {
   color: rgb(218, 149, 0);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}

@@ -1,9 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
-import { TimelineComponent } from './timeline/timeline.component';
-import { ArticleViewComponent } from './articles/article-view.component';
 import { ReleaseNotesComponent } from './release-notes/release-notes.component';
 
 export const routes: Routes = [
@@ -28,11 +24,6 @@ export const routes: Routes = [
       path: 'about', 
       component: AboutComponent
     },
-
-    // { 
-    //   path: 'timeline', 
-    //   component: TimelineComponent
-    // },
 
     { 
       path: 'release-notes', 

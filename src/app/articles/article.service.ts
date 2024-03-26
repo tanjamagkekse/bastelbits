@@ -8,24 +8,24 @@ import { IArticle } from "./article";
 })
 
 export class ArticleService {
-    //TODO add server
-    private articleUrl = 'assets/blog_articles.json';
-  
-    constructor(private http: HttpClient) { }
-    
-    getArticles(): Observable<IArticle[]> {
-        return this.http.get<IArticle[]>(this.articleUrl);
-    }
+  //TODO add server
+  private articleUrl = 'assets/blog_articles.json';
 
-    // Get one article
-    // Since we are working with a json file, we can only retrieve all articles
-    // So retrieve all articles and then find the one we want using 'map'
-    getArticleById(id: number): Observable<IArticle | undefined> {
-        return this.getArticles()
-        .pipe(
-            map((articles: IArticle[]) => articles.find(a => a.articleId === id))
-        );
-    }
+  constructor(private http: HttpClient) { }
+  
+  getArticles(): Observable<IArticle[]> {
+      return this.http.get<IArticle[]>(this.articleUrl);
+  }
+
+  // Get one article
+  // Since we are working with a json file, we can only retrieve all articles
+  // So retrieve all articles and then find the one we want using 'map'
+  getArticleById(id: number): Observable<IArticle | undefined> {
+      return this.getArticles()
+      .pipe(
+          map((articles: IArticle[]) => articles.find(a => a.articleId === id))
+      );
+  }
 
   private handleError(err: HttpErrorResponse): Observable<never> {
     // in a real world app, we may send the server to some remote logging infrastructure

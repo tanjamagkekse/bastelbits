@@ -42,7 +42,7 @@
     <div class="card hover" [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]" >
       <img class="card-img-top" src={{article.thumbnailImageUrl}} alt={{article.title}}>
       <div class="card-body pt-0">
-        <strong class="topic-text">{{article.topic}}</strong>
+        <strong class="topic-text orange">{{article.topic}}</strong>
         <h5 class="card-title">{{article.title}}</h5>
         <p class="card-text">{{article.snippet}}</p>
         <p class="card-text text-end">
