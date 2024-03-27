@@ -1,5 +1,5 @@
 .gray-bg {
-  opacity: 0.6;
+  opacity: 0.8;
   background-color: black;
   left: 0px;
   top: 0px;
@@ -38,6 +38,7 @@
   margin: 20px auto;
   overflow-y: auto;
   max-height: 88vh;
+  padding: 25px;
 }
 
 .snippet{

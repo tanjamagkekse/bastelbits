@@ -78,6 +78,7 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
         
         // add images as long as there are space and images
         if(this.imagesSubset){
+          imageHtml = "<div class='row mt-5 mb-5 justify-content-center align-items-center'>"
           for (let i = 0; i < placeholderLength && this.imagesSubset.length > 0; i++) {
             imageHtml += `
               <div class='col-md-4'>
@@ -88,6 +89,7 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
             // delete this element from subset to avoid doubles
             this.imagesSubset.shift();
           }
+          imageHtml += "</div>"
         }
         updatedContent = updatedContent.replace('{{img3}}', imageHtml);
       }

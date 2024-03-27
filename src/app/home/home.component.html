@@ -1,20 +1,8 @@
 
-<!-- <header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
-  <nav class="d-flex justify-content-between">
-      <a class="font text-dark" (click)="filter=''">Alle Themen</a>
-      <a class="font text-dark" (click)="filter='Malen'">Malen</a>
-      <a class="font text-dark" (click)="filter='Holz'">Holz</a>
-      <a class="font text-dark" (click)="filter='Einrichtung'">Einrichtung</a>
-      <a class="font text-dark" (click)="filter='Licht'">Licht</a>
-      <a class="font text-dark" (click)="filter='Dies Das'">Dies Das</a>
-  </nav>
-  <hr>
-</header> -->
-
 <header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
   <nav class="d-flex justify-content-between">
     <ng-container *ngFor="let item of navigationItems">
-      <a class="font text-dark" (click)="filter = item.filter">
+      <a class="font text-dark" (click)="getFilteredArticles(item.filter)">
         <ng-container *ngIf="isSmallScreen$ | async; else showText">
           <i class="bi" [ngClass]="item.iconClass"></i>
         </ng-container>
@@ -38,16 +26,14 @@
     </div>
   </div>
 
-  <div ngxMasonryItem class="masonry-item"  *ngFor="let article of getFilteredArticles()">
+  <div ngxMasonryItem class="masonry-item"  *ngFor="let article of filteredArticles">
     <div class="card hover" [routerLink]="['/home', { outlets: { aux: ['article-view', article.articleId]}}]" >
       <img class="card-img-top" src={{article.thumbnailImageUrl}} alt={{article.title}}>
       <div class="card-body pt-0">
-        <strong class="topic-text orange">{{article.topic}}</strong>
+        <strong class="topic-text orange">{{article.topic[0]}}</strong>
         <h5 class="card-title">{{article.title}}</h5>
         <p class="card-text">{{article.snippet}}</p>
-        <p class="card-text text-end">
-          <small class="text-muted">vom {{article.creationDate}}</small>
-        </p>
+        <p class="card-text text-end smaller text-muted">gewerkelt am {{article.creationDate}}</p>
       </div>
     </div>
   </div>
