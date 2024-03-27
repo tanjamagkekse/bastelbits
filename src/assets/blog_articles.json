@@ -2,7 +2,7 @@
   {
     "articleId": 1,
     "title": "Kork-Untersetzer",
-    "topic": "Malen",
+    "topic": ["Malen"],
     "type": "text",
     "creationDate": "02. August 2021",
     "releaseDate": "12. März 2024",
@@ -22,11 +22,11 @@
     {
       "articleId": 2,
       "title": "Phoniebox-Bemalung",
-      "topic": "Malen",
+      "topic": ["Malen"],
       "type": "text",
       "creationDate": "07. Februar 2023",
       "releaseDate": "02. März 2024",
-      "snippet": "Kurzer Text.",
+      "snippet": "Mein Bruder hat eine Phoniebox gemalt und brauchte eine passende Bemalung außenrum. Da sag' ich ja nicht nein 😉",
       "content":  "assets/images/phoniebox/phoniebox.html",
       "thumbnailImageUrl": "assets/images/phoniebox/phoniebox_thumb.jpg",
       "images": [
@@ -40,19 +40,8 @@
 
     {
       "articleId": 3,
-      "title": "Mein dritter Blog Artikel",
-      "topic": "Licht",
-      "type": "text",
-      "creationDate": "16. Februar 2023",
-      "releaseDate": "03. März 2024",
-      "snippet": "Kurzer Text.",
-      "content": "Langer Text",
-      "thumbnailImageUrl": "http://placehold.it/300"
-    },
-    {
-      "articleId": 4,
       "title": "Adventure Awaits ...",
-      "topic": "Malen",
+      "topic": ["Malen"],
       "type": "image",
       "releaseDate": "10. März 2024",
       "creationDate": "01. Oktober 2022",
@@ -68,32 +57,46 @@
     },
 
     {
-      "articleId": 5,
-      "title": "Mein vierter Blog Artikel",
-      "topic": "Licht",
+      "articleId": 4,
+      "title": "Pimp my Kallax",
+      "topic": ["Holz", "Einrichtung"],
       "type": "text",
-      "creationDate": "16. Februar 2023",
-      "releaseDate": "04. März 2024",
-      "snippet": "Kurzer Text.",
-      "content": "Lorem ipsum dolor sit amet dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur",
-      "thumbnailImageUrl": "http://placehold.it/300"
+      "creationDate": "04. November 2022",
+      "releaseDate": "27. März 2024",
+      "snippet": "Das weiße Kallax im Flur war mir irgendwie zu eintönig 😊. Deswegen kamen Holzfüße drunter und eine Platte aus Klötzchen drauf.",
+      "content": "assets/images/kallax_topping/kallax_topping.html",
+      "thumbnailImageUrl": "assets/images/kallax_topping/kallax_topping_thumb.jpg",
+      "images": [
+        "assets/images/kallax_topping/kallax_topping_01.jpg",
+        "assets/images/kallax_topping/kallax_topping_02.jpg",
+        "assets/images/kallax_topping/kallax_topping_03.jpg",
+        "assets/images/kallax_topping/kallax_topping_04.jpg",
+        "assets/images/kallax_topping/kallax_topping_05.jpg",
+        "assets/images/kallax_topping/kallax_topping_06.jpg",
+        "assets/images/kallax_topping/kallax_topping_07.jpg",
+        "assets/images/kallax_topping/kallax_topping_08.jpg",
+        "assets/images/kallax_topping/kallax_topping_09.jpg"
+        ]
     },
 
     {
-      "articleId": 6,
-      "title": "Mein fünfter Blog Artikel",
-      "topic": "Licht",
-      "type": "text",
-      "creationDate": "16. Februar 2023",
-      "releaseDate": "05. März 2024",
-      "snippet": "Das ist mein fünfter Blog-Beitrag und hier steht toller Text",
-      "content": "Lorem ipsum dolor sit amet dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur",
-      "thumbnailImageUrl": "http://placehold.it/300"
+      "articleId": 5,
+      "title": "Hue Party",
+      "topic": ["Licht", "Einrichtung"],
+      "type": "image",
+      "creationDate": "30. November 2019",
+      "releaseDate": "27. März 2024",
+      "snippet": "Meine Wohnung 2019. Manchmal mache ich buntes Licht an und tanze auf laute Musik (Kopfhörer) durch die Wohnung 😁 Kann ich empfehlen!",
+      "content": "",
+      "thumbnailImageUrl": "assets/images/light/hue_party_thumb.jpg",
+      "images": [
+        "assets/images/light/hue_party_01.jpg"
+      ]
     },
     {
-      "articleId": 7,
+      "articleId": 6,
       "title": "Surf House",
-      "topic": "Malen",
+      "topic": ["Malen"],
       "type": "image",
       "releaseDate": "10. März 2024",
       "creationDate": "28. Juli 2021",
@@ -104,12 +107,10 @@
         "assets/images/malen/surf_house_01.jpg"
         ]
     },
-
-
     {
-      "articleId": 8,
+      "articleId": 7,
       "title": "Barcelona",
-      "topic": "Malen",
+      "topic": ["Malen"],
       "type": "image",
       "releaseDate": "09. März 2024",
       "creationDate": "16. Februar 2023",
@@ -122,5 +123,4 @@
         "assets/images/malen/barcelona_blue_02.jpg"
         ]
     }
-
   ]
