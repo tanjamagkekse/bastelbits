@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ArticleViewComponent } from './article-view.component';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('ArticleViewComponent', () => {
   let component: ArticleViewComponent;
@@ -8,7 +10,7 @@ describe('ArticleViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ArticleViewComponent]
+      imports: [ArticleViewComponent, RouterModule.forRoot([]), HttpClientModule]
     })
     .compileComponents();
     

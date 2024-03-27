@@ -1,10 +1,10 @@
-import { Component, Renderer2, ViewChild, HostListener, AfterViewInit, OnInit} from '@angular/core';
+import { Component, Renderer2, ViewChild, HostListener, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavigationStart, Router, RouterEvent, RouterModule } from '@angular/router';
+import { NavigationStart, Router, RouterModule } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
-import {MatSidenav, MatSidenavContainer, MatSidenavModule} from '@angular/material/sidenav';
+import {MatSidenav, MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { CdkScrollable } from '@angular/cdk/scrolling';
@@ -16,7 +16,7 @@ import { OverlayService } from './home/overlay.service';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, MatListModule, MatButtonModule, MatSidenavModule, MatIconModule, MatToolbarModule, RouterModule]
+    imports: [CommonModule, MatListModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatToolbarModule, RouterModule]
 })
 
 export class AppComponent implements OnInit{
