@@ -60,7 +60,11 @@ mat-sidenav-container {
   position: fixed;
 }
 
-/* /ove the content down so that it won't be hidden by the toolbar */
+.mat-drawer-container{
+  background-color: white;
+}
+
+/* move the content down so that it won't be hidden by the toolbar */
 mat-sidenav {
   position: fixed;
   padding-top: 4rem;

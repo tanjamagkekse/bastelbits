@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ReleaseNotesComponent } from './release-notes/release-notes.component';
+import { SkillsComponent } from './skills/skills.component';
 
 export const routes: Routes = [
 
@@ -15,10 +16,10 @@ export const routes: Routes = [
       loadChildren: () => import('./home/home.component.routes')
     },    
 
-    // { 
-    //   path: 'skills', 
-    //   component: SkillsComponent
-    // },
+    { 
+      path: 'skills', 
+      component: SkillsComponent
+    },
 
     { 
       path: 'about', 
