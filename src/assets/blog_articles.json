@@ -7,15 +7,15 @@
     "creationDate": "02. August 2021",
     "releaseDate": "12. März 2024",
     "snippet": "Eines meiner längsten Projekte: 2021 habe ich über mehrere Monate ca. 80 Korkuntersetzer mit einem Brennkolben bemalt",
-    "content": "assets/images/kork_wedding/kork_wedding.html",
-    "thumbnailImageUrl": "assets/images/kork_wedding/kork_wedding_thumb.jpg",
+    "content": "assets/articles/001_kork_wedding/kork_wedding.html",
+    "thumbnailImageUrl": "assets/articles/001_kork_wedding/kork_wedding_thumb.jpg",
     "images": [
-      "assets/images/kork_wedding/kork_wedding_01.jpg",
-      "assets/images/kork_wedding/kork_wedding_02.jpg",
-      "assets/images/kork_wedding/kork_wedding_03.jpg",
-      "assets/images/kork_wedding/kork_wedding_04.jpg",
-      "assets/images/kork_wedding/kork_wedding_05.jpg",
-      "assets/images/kork_wedding/kork_wedding_06.jpg"
+      "assets/articles/001_kork_wedding/kork_wedding_01.jpg",
+      "assets/articles/001_kork_wedding/kork_wedding_02.jpg",
+      "assets/articles/001_kork_wedding/kork_wedding_03.jpg",
+      "assets/articles/001_kork_wedding/kork_wedding_04.jpg",
+      "assets/articles/001_kork_wedding/kork_wedding_05.jpg",
+      "assets/articles/001_kork_wedding/kork_wedding_06.jpg"
      ]
   },
 
@@ -27,14 +27,14 @@
       "creationDate": "07. Februar 2023",
       "releaseDate": "02. März 2024",
       "snippet": "Mein Bruder hat eine Phoniebox gemalt und brauchte eine passende Bemalung außenrum. Da sag' ich ja nicht nein 😉",
-      "content":  "assets/images/phoniebox/phoniebox.html",
-      "thumbnailImageUrl": "assets/images/phoniebox/phoniebox_thumb.jpg",
+      "content":  "assets/articles/002_phoniebox/phoniebox.html",
+      "thumbnailImageUrl": "assets/articles/002_phoniebox/phoniebox_thumb.jpg",
       "images": [
-        "assets/images/phoniebox/phoniebox_01.jpg",
-        "assets/images/phoniebox/phoniebox_02.jpg",
-        "assets/images/phoniebox/phoniebox_03.jpg",
-        "assets/images/phoniebox/phoniebox_04.jpg",
-        "assets/images/phoniebox/phoniebox_05.jpg"
+        "assets/articles/002_phoniebox/phoniebox_01.jpg",
+        "assets/articles/002_phoniebox/phoniebox_02.jpg",
+        "assets/articles/002_phoniebox/phoniebox_03.jpg",
+        "assets/articles/002_phoniebox/phoniebox_04.jpg",
+        "assets/articles/002_phoniebox/phoniebox_05.jpg"
        ]
     },
 
@@ -47,12 +47,12 @@
       "creationDate": "01. Oktober 2022",
       "snippet": "Ein Gutschein für einen Rafting/Wanderurlaub",
       "content": "",
-      "thumbnailImageUrl": "assets/images/malen/adventure_awaits_thumb.jpg",
+      "thumbnailImageUrl": "assets/articles/003_adventure_awaits/adventure_awaits_thumb.jpg",
       "images": [
-        "assets/images/malen/adventure_awaits_04.jpg",
-        "assets/images/malen/adventure_awaits_01.jpg",
-        "assets/images/malen/adventure_awaits_02.jpg",
-        "assets/images/malen/adventure_awaits_03.jpg"
+        "assets/articles/003_adventure_awaits/adventure_awaits_01.jpg",
+        "assets/articles/003_adventure_awaits/adventure_awaits_02.jpg",
+        "assets/articles/003_adventure_awaits/adventure_awaits_03.jpg",
+        "assets/articles/003_adventure_awaits/adventure_awaits_04.jpg"
         ]
     },
 
@@ -64,18 +64,18 @@
       "creationDate": "04. November 2022",
       "releaseDate": "27. März 2024",
       "snippet": "Das weiße Kallax im Flur war mir irgendwie zu eintönig 😊. Deswegen kamen Holzfüße drunter und eine Platte aus Klötzchen drauf.",
-      "content": "assets/images/kallax_topping/kallax_topping.html",
-      "thumbnailImageUrl": "assets/images/kallax_topping/kallax_topping_thumb.jpg",
+      "content": "assets/articles/004_kallax_topping/kallax_topping.html",
+      "thumbnailImageUrl": "assets/articles/004_kallax_topping/kallax_topping_thumb.jpg",
       "images": [
-        "assets/images/kallax_topping/kallax_topping_01.jpg",
-        "assets/images/kallax_topping/kallax_topping_02.jpg",
-        "assets/images/kallax_topping/kallax_topping_03.jpg",
-        "assets/images/kallax_topping/kallax_topping_04.jpg",
-        "assets/images/kallax_topping/kallax_topping_05.jpg",
-        "assets/images/kallax_topping/kallax_topping_06.jpg",
-        "assets/images/kallax_topping/kallax_topping_07.jpg",
-        "assets/images/kallax_topping/kallax_topping_08.jpg",
-        "assets/images/kallax_topping/kallax_topping_09.jpg"
+        "assets/articles/004_kallax_topping/kallax_topping_01.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_02.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_03.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_04.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_05.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_06.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_07.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_08.jpg",
+        "assets/articles/004_kallax_topping/kallax_topping_09.jpg"
         ]
     },
 
@@ -88,9 +88,9 @@
       "releaseDate": "27. März 2024",
       "snippet": "Meine Wohnung 2019. Manchmal mache ich buntes Licht an und tanze auf laute Musik (Kopfhörer) durch die Wohnung 😁 Kann ich empfehlen!",
       "content": "",
-      "thumbnailImageUrl": "assets/images/light/hue_party_thumb.jpg",
+      "thumbnailImageUrl": "assets/articles/005_hue_party/hue_party_thumb.jpg",
       "images": [
-        "assets/images/light/hue_party_01.jpg"
+        "assets/articles/005_hue_party/hue_party_01.jpg"
       ]
     },
     {
@@ -102,9 +102,9 @@
       "creationDate": "28. Juli 2021",
       "snippet": "Geburtstagskarte für einen Surfer",
       "content": "",
-      "thumbnailImageUrl": "assets/images/malen/surf_house_thumb.jpg",
+      "thumbnailImageUrl": "assets/articles/006_surf_house/surf_house_thumb.jpg",
       "images": [
-        "assets/images/malen/surf_house_01.jpg"
+        "assets/articles/006_surf_house/surf_house_01.jpg"
         ]
     },
     {
@@ -116,11 +116,27 @@
       "creationDate": "16. Februar 2023",
       "snippet": "Ein Gutschein für eine Reise nach Barcelona",
       "content": "",
-      "thumbnailImageUrl": "assets/images/malen/barcelona_blue_thumb.jpg",
+      "thumbnailImageUrl": "assets/articles/007_barcelona_blue/barcelona_blue_thumb.jpg",
       "images": [
-        "assets/images/malen/barcelona_blue_03.jpg",
-        "assets/images/malen/barcelona_blue_01.jpg",
-        "assets/images/malen/barcelona_blue_02.jpg"
+        "assets/articles/007_barcelona_blue/barcelona_blue_01.jpg",
+        "assets/articles/007_barcelona_blue/barcelona_blue_02.jpg",
+        "assets/articles/007_barcelona_blue/barcelona_blue_03.jpg"
         ]
+    },
+    {
+      "articleId": 8,
+      "title": "Zur Geburt - König der Löwen",
+      "topic": ["Malen"],
+      "type": "image",
+      "releaseDate": "27. März 2024",
+      "creationDate": "21. Oktober 2022",
+      "snippet": "Wenn ein König der Löwen Fan Mama wird 😉",
+      "content": "",
+      "thumbnailImageUrl": "assets/articles/008_birth_card_lionking/birth_card_lionking_thumb.jpg",
+      "images": [
+        "assets/articles/008_birth_card_lionking/birth_card_lionking_01.jpg",
+        "assets/articles/008_birth_card_lionking/birth_card_lionking_02.jpg",
+        "assets/articles/008_birth_card_lionking/birth_card_lionking_03.jpg"
+      ]
     }
   ]
