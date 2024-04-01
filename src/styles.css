@@ -5,11 +5,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
-/* TODO */
+
 @font-face {
   font-family: 'the-seasons';
-  src: url(assets/font/Fontspring-DEMO-theseasons-reg.otf) format("opentype");
+  src: url(assets/font/TheSeasons/webFonts/TheSeasonsRegular/font.woff2) format('woff2'),
+       url(assets/font/TheSeasons/webFonts/TheSeasonsRegular/font.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
+
 
 h1, h2, h3, h4, h5, h6, .font {
     font-family: the-seasons, Arial, Helvetica, sans-serif;
