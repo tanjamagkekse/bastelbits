@@ -1,11 +1,12 @@
-<h1 class="text-center container">Für dieses Projekt nutze ich:</h1>
+<div class="outer-container">
+    <h1 class="text-center">Für dieses Projekt nutze ich:</h1>
 
-<div class="grid-container">
-    <div class="grid-item shadow hover" *ngFor="let item of items">
-      <img [src]="item.imageUrl" alt="Image">
-      <div class="text-container">
-        <p>{{item.text}}</p>
-      </div>
+    <div class="grid-container">
+        <div class="grid-item shadow hover" *ngFor="let item of items">
+        <img [src]="item.imageUrl" alt="Image">
+        <div class="text-container">
+            <p>{{item.text}}</p>
+        </div>
+        </div>
     </div>
 </div>
-
