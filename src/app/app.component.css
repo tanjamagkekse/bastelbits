@@ -45,7 +45,7 @@
 }
 
 .subtitle{
-  font-family: "Reenie Beanie";
+  font-family: Reenie Beanie;
   display: block;
   margin-top: -8px;
 }
@@ -71,14 +71,27 @@ mat-sidenav {
 
   .entry{
       display: flex;
+      margin-right: 2em;
       align-items: center;
-      gap: 10px;
-      padding: 0.5em 1.5em 0.5em 0;
       text-decoration: none;
       display: block;
-      font-size: 18px;
+      font-size: 16px;
   }
+
+
+
+  .mdc-list-item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    i {
+      font-size: 24px;
+    }
+  }
+
 }
+
+
 
 /* Move the content down so that it won't be hidden by the toolbar */
 .mat-sidenav-content{
