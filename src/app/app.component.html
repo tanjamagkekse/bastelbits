@@ -20,21 +20,27 @@
   <mat-sidenav #sidenav class="sidebar" [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'">
     <mat-nav-list class="mt-5">
       <a mat-list-item>
-        <span routerLink='/home' routerLinkActive='active'>
+        <span class="entry link" routerLink='/home' routerLinkActive='active'>
           <i class="bi me-4 bi-house-door"></i>
-          <span>Home</span>
+          <span>Blogartikel</span>
         </span>
       </a>
       <a mat-list-item>
         <span class="entry link" routerLink='/about' routerLinkActive='active'>
           <i class="bi me-4 bi-lightbulb"></i>
-          <span>About</span>
+          <span>Über mich</span>
         </span>
       </a>
       <a mat-list-item>
         <span class="entry link" routerLink='/skills' routerLinkActive='active'>
           <i class="bi me-4 bi-tools"></i>
-          <span>Tools</span>
+          <span>Genutzte Tools</span>
+        </span>
+      </a>
+      <a mat-list-item>
+        <span class="entry link" routerLink='/contact' routerLinkActive='active'>
+          <i class="bi me-4 bi-envelope-open"></i>
+          <span>Kontakt</span>
         </span>
       </a>
     </mat-nav-list>
