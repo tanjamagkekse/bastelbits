@@ -3,9 +3,6 @@
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
-
-
 @font-face {
   font-family: 'the-seasons';
   src: url(assets/font/TheSeasons/webFonts/TheSeasonsRegular/font.woff2) format('woff2'),
@@ -14,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Reenie Beanie';
+  src: url(assets/font/ReenieBeanie/ReenieBeanie-Regular.ttf) format('truetype');
+
+  font-weight: 300;
+  font-style: normal;
+}
 
 h1, h2, h3, h4, h5, h6, .font {
     font-family: the-seasons, Arial, Helvetica, sans-serif;
