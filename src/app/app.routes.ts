@@ -3,6 +3,8 @@ import { AboutComponent } from './about/about.component';
 import { ReleaseNotesComponent } from './release-notes/release-notes.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { DatenschutzComponent } from './footer/datenschutz.component';
+import { ImpressumComponent } from './footer/impressum.component';
 
 export const routes: Routes = [
 
@@ -26,6 +28,14 @@ export const routes: Routes = [
     { 
       path: 'contact', 
       component: ContactFormComponent
+    },
+    { 
+      path: 'impressum', 
+      component: ImpressumComponent
+    },
+    { 
+      path: 'datenschutz', 
+      component: DatenschutzComponent
     },
     { 
       path: 'release-notes', 
