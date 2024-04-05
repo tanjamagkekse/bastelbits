@@ -7,7 +7,7 @@ import { DatenschutzComponent } from './footer/datenschutz.component';
 import { ImpressumComponent } from './footer/impressum.component';
 
 export const routes: Routes = [
-
+  
     { 
       path: '',
       redirectTo: 'home', 
