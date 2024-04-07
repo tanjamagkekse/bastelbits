@@ -26,7 +26,6 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent implements OnInit{
   title = 'BastelBits';
   
-  isMobile: boolean = true;  
   isScrolled: boolean = false;
   isOverlayOpen: boolean = false; 
 
