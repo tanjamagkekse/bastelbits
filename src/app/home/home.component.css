@@ -10,7 +10,7 @@
   padding-bottom: 5px;
   font-size: 16px;
   background-color: white;
-  transition: padding 0.3s; /* Fügt eine Übergangseffekt für die Padding-Änderung hinzu */
+  transition: padding 0.3s; 
 }
 
 .blog-header a{
