@@ -7,11 +7,13 @@ import { delay, map, Observable, shareReplay, Subscription, timer } from 'rxjs';
 import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 import { OverlayService } from './overlay.service';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { SearchService } from './search.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, NgxMasonryModule],
+  imports: [CommonModule, FormsModule, RouterModule, NgxMasonryModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -19,15 +21,16 @@ export class HomeComponent implements OnInit, OnDestroy{
   articleServiceSub!: Subscription;
   errorMessage = '';
   articles: IArticle[] = [];
-  twoRandomArticles: IArticle[] = [];
+  // twoRandomArticles: IArticle[] = [];
   filteredArticles: IArticle[] = [];
   lastArticle: IArticle | undefined;
   isScrolled: boolean = false;
   isOverlayOpen: boolean = false;
-
+  searchResult: IArticle[] = [];
+  isSearchOpen: boolean = false;
+  searchQuery = '';
 
   @ViewChild(NgxMasonryComponent) masonry: NgxMasonryComponent | undefined;
-
 
   navigationItems = [
     { text: 'Alle Themen', filter: '', iconClass: 'bi bi-infinity' },
@@ -47,7 +50,8 @@ export class HomeComponent implements OnInit, OnDestroy{
 
   constructor(private articleService: ArticleService,
               private overlayService: OverlayService,
-              private breakpointObserver: BreakpointObserver){}
+              private breakpointObserver: BreakpointObserver,
+              private searchService: SearchService){}
   
   ngOnInit(): void {
     this.articleServiceSub = this.articleService.getArticles().subscribe({
@@ -56,6 +60,8 @@ export class HomeComponent implements OnInit, OnDestroy{
         this.filteredArticles = this.articles;
         // this.lastArticle = this.articles[this.articles.length - 1];
         // this.twoRandomArticles = this.selectRandomArticles(articles, 2);
+        this.searchService.setArticles(this.articles);
+
       },
       error: err => this.errorMessage = err
     });
@@ -65,20 +71,21 @@ export class HomeComponent implements OnInit, OnDestroy{
     });
   }
 
+  onSearch(query: string) {
+    this.searchResult = this.searchService.search(query);
+  }
+
   isSmallScreen$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.XSmall])
   .pipe(
     map(result => result.matches),
     shareReplay()
   );
 
-
   getFilteredArticles(filter: string) {
-    console.log(filter)
     if (filter==''){
       this.filteredArticles = this.articles
     }
     else{
-      console.log("else")
       this.filteredArticles = this.articles
         .slice()
         .filter((article) => article.topic.includes(filter))
@@ -91,11 +98,32 @@ export class HomeComponent implements OnInit, OnDestroy{
     this.isScrolled = window.scrollY > 2;
   }
 
-
   ngOnDestroy(): void {
     this.articleServiceSub.unsubscribe();
   }
 
+  search(query: string) {
+    if (query.length >=3){
+      const searchResults = this.searchService.search(query);
+      this.displaySearchResult(searchResults);
+    }
+    if (query.length == 0){
+      this.displaySearchResult(this.articles);
+    }
+  }
+
+  openSearch() {
+    this.isSearchOpen = !this.isSearchOpen;
+    if (!this.isSearchOpen) {
+      this.searchQuery = ''; 
+    }
+  }
+
+  displaySearchResult(articles: IArticle[]){
+    this.filteredArticles = articles
+        .slice()
+        .sort((a, b) => b.articleId - a.articleId);
+  }
 
   // // Methode zum Zufälligauswählen von Artikeln
   // private selectRandomArticles(articles: IArticle[], count: number): IArticle[] {

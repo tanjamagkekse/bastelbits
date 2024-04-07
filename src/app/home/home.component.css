@@ -32,6 +32,10 @@
   margin: 2px 0 0px 0;
 }
 
+.blog-header input{
+  width:100px;
+}
+
 .construction-hint{
   background-color: blanchedalmond;
 }
