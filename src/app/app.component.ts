@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { CdkScrollable } from '@angular/cdk/scrolling';
 import { OverlayService } from './home/overlay.service';
+import { FooterComponent } from "./footer/footer.component";
 
 
 @Component({
@@ -16,7 +17,7 @@ import { OverlayService } from './home/overlay.service';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, MatListModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatToolbarModule, RouterModule]
+    imports: [CommonModule, FooterComponent, MatListModule, MatButtonModule, MatSidenavModule, MatIconModule, MatToolbarModule, RouterModule, FooterComponent]
 })
 
 export class AppComponent implements OnInit{
