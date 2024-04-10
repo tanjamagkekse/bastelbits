@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit, OnDestroy{
   searchResult: IArticle[] = [];
   isSearchOpen: boolean = false;
   searchQuery = '';
+  selectedFilter = '';
 
   @ViewChild(NgxMasonryComponent) masonry: NgxMasonryComponent | undefined;
 
@@ -91,6 +92,7 @@ export class HomeComponent implements OnInit, OnDestroy{
         .filter((article) => article.topic.includes(filter))
         .sort((a, b) => b.articleId - a.articleId);
     }
+    this.selectedFilter = filter;
   }
 
   @HostListener('window:scroll', [])

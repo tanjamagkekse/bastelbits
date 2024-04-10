@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.blog-header a.selected{
+  color: rgb(218, 149, 0) !important;
+}
+
 .blog-header hr{
   margin: 10px 0;
 }
@@ -65,10 +69,16 @@
 }
 
 .masonry-item{
-  width: 250px;
+  width: 240px;
   margin-bottom: 20px;
   margin-right: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404)
+}
+
+@media only screen and (max-width: 526px) {
+  .masonry-item{
+    width: 80vw;
+  }
 }
 
 .smaller{

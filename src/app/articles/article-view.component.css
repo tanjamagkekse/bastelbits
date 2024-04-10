@@ -43,12 +43,11 @@
 
 .snippet{
   font-family: "Reenie Beanie";
-  font-size: clamp(25px, 4.5vw, 40px);
+  font-size: clamp(25px, 4.5vw, 30px);
 }
 
 .title{
-  /* font-size: 70px; */
-  font-size: clamp(40px, 4.5vw, 70px)
+  font-size: clamp(22px, 4,5vw, 50px);
 }
 
 

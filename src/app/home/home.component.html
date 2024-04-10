@@ -1,14 +1,16 @@
-
+<!-- Filters and Searchbar -->
 <header [ngClass]="{'blog-header-scrolled': isScrolled || isOverlayOpen }" class="blog-header">
+  
   <nav class="d-flex justify-content-between">
     <ng-container *ngFor="let item of navigationItems">
-      <a class="font text-dark" (click)="getFilteredArticles(item.filter)">
+      <a class="font text-dark" [class.selected]="selectedFilter === item.filter" (click)="getFilteredArticles(item.filter)">
         <ng-container *ngIf="isSmallScreen$ | async; else showText">
           <i class="bi" [ngClass]="item.iconClass"></i>
         </ng-container>
         <ng-template #showText>{{ item.text }}</ng-template>
       </a>
     </ng-container>
+
     <div *ngIf="isSearchOpen" class="search-container">
       <input type="text" placeholder="Suche..." [(ngModel)]="searchQuery" (input)="search(searchQuery)">
     </div>
@@ -19,10 +21,11 @@
   <hr>
 </header>
 
+<!-- Masonry Cards -->
 <ngx-masonry [options]="masonryOptions" [ordered]="true" class="masonry-box">
   <div ngxMasonryItem class="masonry-item card card-body construction-hint" >
     <h5 class="card-title">Die Seite befindet sich gerade im Aufbau</h5>
-    <p class="card-text">Deswegen guck' gerne immer mal wieder rein. Hier tut sich fast täglich was 😊. Unter <a routerLink='/skills'>Tools</a> siehst du womit ich arbeite.</p>
+    <p class="card-text">Deswegen guck' gerne immer mal wieder rein. Hier tut sich fast täglich was 😊. <a routerLink='/release-notes'>Hier</a> siehst du was sich so geändert hat und unter <a routerLink='/skills'>Tools</a> siehst du womit ich arbeite.</p>
     <p class="card-text">
       <small class="text-muted"><a href="https://github.com/tanjamagkekse/bastelbits" class="text-dark">Mehr Infos bei Github... </a></small>
     </p>
@@ -39,8 +42,9 @@
   </div>
 </ngx-masonry>
 
-<nav class="m-4 text-center">
-  <a class="orange btn btn-light" href="#">Older</a>
-  <a class="orange btn btn-light disabled" href="#">Newer</a>
-</nav>
+<!-- add them later again if necessary -->
+<!-- <nav class="m-4 text-center">
+  <a class="btn btn-light" href="#">Older</a>
+  <a class="btn btn-light disabled" href="#">Newer</a>
+</nav> -->
     
