@@ -138,5 +138,32 @@
         "assets/articles/008_birth_card_lionking/birth_card_lionking_02.jpg",
         "assets/articles/008_birth_card_lionking/birth_card_lionking_03.jpg"
       ]
+    },
+    {
+      "articleId": 9,
+      "title": "Sprossen-Garderobe",
+      "topic": ["Holz", "Licht", "Einrichtung"],
+      "type": "text",
+      "releaseDate": "11. April 2024",
+      "creationDate": "15. März 2021",
+      "snippet": "Eine Garderobe mit genügend Platz für Jacken, Pflanzen und natürlich Licht 😇",
+      "content": "assets/articles/009_wardrobe/wardrobe.html",
+      "thumbnailImageUrl": "assets/articles/009_wardrobe/wardrobe_thumb.jpg",
+      "images": [
+        "assets/articles/009_wardrobe/wardrobe_01.jpg",
+        "assets/articles/009_wardrobe/wardrobe_02.jpg",
+        "assets/articles/009_wardrobe/wardrobe_03.jpg",
+        "assets/articles/009_wardrobe/wardrobe_04.jpg",
+        "assets/articles/009_wardrobe/wardrobe_05.jpg",
+        "assets/articles/009_wardrobe/wardrobe_06.jpg",
+        "assets/articles/009_wardrobe/wardrobe_07.jpg",
+        "assets/articles/009_wardrobe/wardrobe_08.jpg",
+        "assets/articles/009_wardrobe/wardrobe_09.jpg",
+        "assets/articles/009_wardrobe/wardrobe_10.jpg",
+        "assets/articles/009_wardrobe/wardrobe_11.jpg",
+        "assets/articles/009_wardrobe/wardrobe_12.jpg",
+        "assets/articles/009_wardrobe/wardrobe_13.jpg",
+        "assets/articles/009_wardrobe/wardrobe_14.jpg"
+      ]
     }
   ]
