@@ -21,5 +21,6 @@ export class SkillsComponent {
     { imageUrl: 'assets/images/skills/logo_jasmine.svg', text: 'Jasmine' },
     { imageUrl: 'assets/images/skills/logo_karma.svg', text: 'Karma' },
     { imageUrl: 'assets/images/skills/logo_bootstrap.svg', text: 'Bootstrap' },
+    { imageUrl: 'assets/images/skills/logo_eslint.svg', text: 'ESLint' },
   ];
 }
