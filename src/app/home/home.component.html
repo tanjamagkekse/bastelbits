@@ -3,7 +3,8 @@
   
   <nav class="d-flex justify-content-between">
     <ng-container *ngFor="let item of navigationItems">
-      <a class="font text-dark" [class.selected]="selectedFilter === item.filter" (click)="getFilteredArticles(item.filter)">
+      <a class="font text-dark" [class.selected]="selectedFilter === item.filter" (click)="getFilteredArticles(item.filter)"
+      (keyup.enter)="getFilteredArticles(item.filter)" tabindex="0">
         <ng-container *ngIf="isSmallScreen$ | async; else showText">
           <i class="bi" [ngClass]="item.iconClass"></i>
         </ng-container>
@@ -14,7 +15,7 @@
     <div *ngIf="isSearchOpen" class="search-container">
       <input type="text" placeholder="Suche..." [(ngModel)]="searchQuery" (input)="search(searchQuery)">
     </div>
-    <div class="search-icon" (click)="openSearch()">
+    <div class="search-icon" (click)="openSearch()" (keyup.enter)="openSearch()" tabindex="0">
       <i class="bi bi-search"></i>
     </div>
   </nav>

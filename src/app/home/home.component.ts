@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, HostListener, OnChanges, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { IArticle } from '../articles/article';
 import { ArticleService } from '../articles/article.service';
-import { delay, map, Observable, shareReplay, Subscription, timer } from 'rxjs';
+import { map, Observable, shareReplay, Subscription } from 'rxjs';
 import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 import { OverlayService } from './overlay.service';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';

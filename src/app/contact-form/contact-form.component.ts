@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
+import { Component } from '@angular/core';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { IMessage } from './message';
-import { MessageService } from './message.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -15,9 +14,7 @@ export class ContactFormComponent{
   ContactForm!: FormGroup;
   messageData: IMessage = {name: '', email: '', message: ''}
   
-  constructor(private formBuilder: FormBuilder, 
-              private messageService: MessageService,
-              private router: Router) { }
+  constructor() { }
 
 
   sendMessage() {

@@ -21,7 +21,7 @@ import { CarouselComponent } from "../carousel/carousel.component";
 export class ArticleViewComponent implements OnInit, OnDestroy {
   errorMessage = '';
   article: IArticle | undefined; 
-  imagesSubset: Array<String> | undefined;
+  imagesSubset: Array<string> | undefined;
   private articleSubscription: Subscription | undefined;
 
 
