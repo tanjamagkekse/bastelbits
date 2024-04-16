@@ -74,7 +74,6 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
       while ((updatedContent.match(/{{img(\d+)}}/) ?? []).length > 0) {
         const num = parseInt(updatedContent.match(/{{img(\d+)}}/)![1]);    
         let imageHtml = '';
-        console.log(num);
         
         // add images as long as there are space and images
         if(this.imagesSubset){
