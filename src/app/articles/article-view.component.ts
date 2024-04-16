@@ -67,19 +67,20 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
   }
 
   insertImages(){
-    const placeholderLength = 3;
-
     if (this.article) {
       let updatedContent = this.article.content;
   
       // repeat until all placeholders are filled or images are empty
-      while (updatedContent.includes('{{img3}}')) {
+      while ((updatedContent.match(/{{img(\d+)}}/) ?? []).length > 0) {
+        const num = parseInt(updatedContent.match(/{{img(\d+)}}/)![1]);    
         let imageHtml = '';
+        console.log(num);
         
         // add images as long as there are space and images
         if(this.imagesSubset){
           imageHtml = "<div class='row mt-4 mb-2 justify-content-center align-items-center'>"
-          for (let i = 0; i < placeholderLength && this.imagesSubset.length > 0; i++) {
+          //add as much images as specified in {{img*}}
+          for (let i = 0; i < num && this.imagesSubset.length > 0; i++) {
             imageHtml += `
               <div class='col-md-4'>
                 <img alt="${this.imagesSubset[0]}" 
@@ -91,7 +92,9 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
           }
           imageHtml += "</div>"
         }
-        updatedContent = updatedContent.replace('{{img3}}', imageHtml);
+        // delete match from updatedContent
+        updatedContent = updatedContent.replace(/{{img(\d+)}}/, imageHtml); 
+
       }
   
       this.article.content = updatedContent;

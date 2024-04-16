@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IMessage } from './message';
 
@@ -12,15 +12,15 @@ export class MessageService{
 
     constructor(private http: HttpClient){}
 
-    submitForm() {
-        const formData = {
-          email: this.messageData.email,
-          // Andere Formularfelder hier hinzufügen
-        };
+    // submitForm() {
+    //     const formData = {
+    //       email: this.messageData.email,
+    //       // Andere Formularfelder hier hinzufügen
+    //     };
     
-        // Hier HTTP-Anfrage an deinen Backend-Service senden, der die E-Mail sendet
-        this.http.post('URL_DEINES_BACKEND_SERVICES', formData).subscribe(response => {
-          // Erfolgsnachricht anzeigen oder andere Aktionen ausführen
-        });
-      }
+    //     // Hier HTTP-Anfrage an deinen Backend-Service senden, der die E-Mail sendet
+    //     //this.http.post('URL_DEINES_BACKEND_SERVICES', formData).subscribe(response => {
+    //       // Erfolgsnachricht anzeigen oder andere Aktionen ausführen
+    //     //});
+    //   }
 }
