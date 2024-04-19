@@ -61,8 +61,8 @@ export class HomeComponent implements OnInit, OnDestroy{
         this.filteredArticles = this.articles;
         // this.lastArticle = this.articles[this.articles.length - 1];
         // this.twoRandomArticles = this.selectRandomArticles(articles, 2);
-        this.searchService.setArticles(this.articles);
-
+        this.searchService.setArticles(articles);
+        this.articleService.setArticles(articles);
       },
       error: err => this.errorMessage = err
     });
