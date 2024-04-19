@@ -39,13 +39,6 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
     this.overlayService.setOverlayStatus(true);
   }
 
-  // getArticle(id: number): void {
-  //   this.articleService.getArticleById(id).subscribe({
-  //     next: article => this.article = article,
-  //     error: err => this.errorMessage = err
-  //   });
-  // }
-
   getArticle(id: number): void {
     this.articleSubscription = this.articleService.getArticleById(id).subscribe({
       next: article => {
