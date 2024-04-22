@@ -43,3 +43,6 @@ Thumbs.db
 
 # PhotoFiles
 _photoOptimizeBackup*
+
+# JSON because I use database
+blog_articles.json
