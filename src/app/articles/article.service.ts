@@ -9,7 +9,7 @@ import { IArticle } from "./article";
 })
 
 export class ArticleService {
-  private articleUrl = 'https://www.bastelbits.de/articles.php' 
+  private articleUrl = 'https://bastelbits.de/articles.php'; 
   //private articleUrl = 'assets/blog_articles.json';
   private articles: IArticle[] = [];
 
