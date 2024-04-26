@@ -25,5 +25,7 @@ export class SkillsComponent {
     { imageUrl: 'assets/images/skills/logo_postman.svg', text: 'Postman' },
     { imageUrl: 'assets/images/skills/logo_php.svg', text: 'PHP' },
     { imageUrl: 'assets/images/skills/logo_mariadb.svg', text: 'MariaDB' },
+    { imageUrl: 'assets/images/skills/logo_sql.png', text: 'SQL' },
+
   ];
 }

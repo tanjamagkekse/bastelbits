@@ -6,7 +6,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenav, MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
-import { CdkScrollable } from '@angular/cdk/scrolling';
 import { OverlayService } from './home/overlay.service';
 import { FooterComponent } from "./footer/footer.component";
 
@@ -26,16 +25,13 @@ export class AppComponent implements OnInit{
   isOverlayOpen: boolean = false; 
 
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
-  @ViewChild(CdkScrollable) scrollable: CdkScrollable | undefined;
 
   constructor(private overlayService: OverlayService,
               private renderer: Renderer2,
               private router: Router) { }
 
-
   ngOnInit() {
-
-    //listens to overlay service and hide logo parts if image is scrolled
+    //listens to overlay service and hide logo parts if overlay is open
     this.overlayService.overlayStatus$.subscribe(status => {
       this.isOverlayOpen = status;
       if (this.isOverlayOpen) {
@@ -61,5 +57,4 @@ export class AppComponent implements OnInit{
   onWindowScroll() {
     this.isScrolled = window.scrollY > 15;
   }
-
 }

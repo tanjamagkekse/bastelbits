@@ -22,6 +22,8 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
   errorMessage = '';
   article: IArticle | undefined; 
   imagesSubset: Array<string> | undefined;
+  
+  
   private articleSubscription: Subscription | undefined;
 
 
@@ -41,15 +43,18 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
 
   getArticle(id: number): void {
     this.articleSubscription = this.articleService.getArticleById(id).subscribe({
+      
       next: article => {
-        // if 'content'-key in json is a path to a html
-        if (article?.content && typeof article?.content === 'string' && article?.content.startsWith('assets')) {
+        // if it is a text article
+        if (article?.type =="text") {
           // check the html content
-          this.http.get(article.content, { responseType: 'text' }).subscribe(htmlContent => {
+          this.http.get(article.content, {responseType: 'text'}).subscribe(htmlContent => {
             // and use it as article
             this.article = { ...article, content: htmlContent };
-            this.imagesSubset = this.article.images;
+            //create a NEW array instead of referencing to the other one
+            this.imagesSubset = this.article.images.slice();
             this.insertImages();
+            
           });
         } else {
           this.article = article;
@@ -69,9 +74,10 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
         let imageHtml = '';
         
         // add images as long as there are space and images
-        if(this.imagesSubset){
+        if(this.imagesSubset && this.imagesSubset?.length>0){
           imageHtml = "<div class='row mt-4 mb-2 justify-content-center align-items-center'>"
           //add as much images as specified in {{img*}}
+
           for (let i = 0; i < num && this.imagesSubset.length > 0; i++) {
             imageHtml += `
               <div class='col-md-4'>
@@ -79,10 +85,15 @@ export class ArticleViewComponent implements OnInit, OnDestroy {
                     src="${this.imagesSubset[0]}" 
                     class='img-fluid w-100 mb-3 rounded image-shadow' />
               </div>`;
+
             // delete this element from subset to avoid doubles
             this.imagesSubset.shift();
           }
           imageHtml += "</div>"
+        }
+        else{
+          console.log("hier stimmt was nicht - ich arbeite dran")
+          break;
         }
         // delete match from updatedContent
         updatedContent = updatedContent.replace(/{{img(\d+)}}/, imageHtml); 

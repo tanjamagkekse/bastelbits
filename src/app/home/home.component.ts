@@ -57,10 +57,11 @@ export class HomeComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     this.articleServiceSub = this.articleService.getArticles().subscribe({
       next: articles => {
-        this.articles = articles.reverse();
-        this.filteredArticles = this.articles;
-        // this.lastArticle = this.articles[this.articles.length - 1];
-        // this.twoRandomArticles = this.selectRandomArticles(articles, 2);
+        //change direction, so that latest article is first one to display
+        this.articles = articles.slice().reverse();
+        this.filteredArticles = this.articles.slice();
+
+        //save articles into services
         this.searchService.setArticles(articles);
         this.articleService.setArticles(articles);
       },
@@ -70,6 +71,7 @@ export class HomeComponent implements OnInit, OnDestroy{
     this.overlayService.overlayStatus$.subscribe(status => {
       this.isOverlayOpen = status;
     });
+    
   }
 
   onSearch(query: string) {
@@ -126,26 +128,4 @@ export class HomeComponent implements OnInit, OnDestroy{
         .slice()
         .sort((a, b) => b.articleId - a.articleId);
   }
-
-  // // Methode zum Zufälligauswählen von Artikeln
-  // private selectRandomArticles(articles: IArticle[], count: number): IArticle[] {
-  //     // Erstellen Sie eine Kopie des articles-Arrays
-  //   const articlesCopy = [...articles];
-    
-  //   // Entfernen Sie den letzten Artikel aus der Kopie
-  //   articlesCopy.pop();
-
-  //   const shuffledArticles = this.shuffleArray(articlesCopy); // Permutation der Artikel
-  //   return shuffledArticles.slice(0, count); // Auswahl der ersten zwei Artikel
-  // }
-
-  // // Methode zur Permutation eines Arrays (Fisher-Yates Algorithmus)
-  // private shuffleArray(array: any[]): any[] {
-  //   for (let i = array.length - 1; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1));
-  //     [array[i], array[j]] = [array[j], array[i]];
-  //   }
-  //   return array;
-  // }
-
 }
