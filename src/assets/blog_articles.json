@@ -165,5 +165,51 @@
         "assets/articles/009_wardrobe/wardrobe_13.jpg",
         "assets/articles/009_wardrobe/wardrobe_14.jpg"
       ]
+    },
+    {
+      "articleId": 10,
+      "title": "Schlüsselbrett",
+      "topic": ["Holz", "Licht", "Einrichtung"],
+      "type": "text",
+      "releaseDate": "23. April 2024",
+      "creationDate": "24. März 2024",
+      "snippet": "Zwei leidenschaftliche Bergfreunde sind zusammengezogen und ich wollte ihnen etwas Besonderes zum Einzug schenken 😊⛰️.",
+      "content": "assets/articles/010_keyboard/010_keyboard.html",
+      "thumbnailImageUrl": "assets/articles/010_keyboard/010_keyboard_thumb.jpg",
+      "images": [
+        "assets/articles/010_keyboard/010_keyboard_00.png",
+        "assets/articles/010_keyboard/010_keyboard_01.jpg",
+        "assets/articles/010_keyboard/010_keyboard_02.jpg",
+        "assets/articles/010_keyboard/010_keyboard_03.jpg",
+        "assets/articles/010_keyboard/010_keyboard_04.jpg",
+        "assets/articles/010_keyboard/010_keyboard_05.jpg",
+        "assets/articles/010_keyboard/010_keyboard_06.jpg",
+        "assets/articles/010_keyboard/010_keyboard_07.jpg",
+        "assets/articles/010_keyboard/010_keyboard_08.jpg",
+        "assets/articles/010_keyboard/010_keyboard_09.jpg",
+        "assets/articles/010_keyboard/010_keyboard_10.jpg",
+        "assets/articles/010_keyboard/010_keyboard_11.jpg",
+        "assets/articles/010_keyboard/010_keyboard_12.jpg",
+        "assets/articles/010_keyboard/010_keyboard_13.jpg",
+        "assets/articles/010_keyboard/010_keyboard_14.jpg",
+        "assets/articles/010_keyboard/010_keyboard_15.jpg",
+        "assets/articles/010_keyboard/010_keyboard_16.jpg"
+      ]
+    },
+    {
+      "articleId": 11,
+      "title": "Geburtstagsballons",
+      "topic": ["Malen"],
+      "type": "image",
+      "releaseDate": "26. April 2024",
+      "creationDate": "27. Juni 2022",
+      "snippet": "Verschiedene Ballonmotive als Geburtstagskarte",
+      "content": "",
+      "thumbnailImageUrl": "assets/articles/011_birthday_balloons/011_birthday_balloons_thumb.jpg",
+      "images": [
+        "assets/articles/011_birthday_balloons/011_birthday_balloons_01.jpg",
+        "assets/articles/011_birthday_balloons/011_birthday_balloons_02.jpg",
+        "assets/articles/011_birthday_balloons/011_birthday_balloons_03.jpg"
+      ]
     }
   ]
