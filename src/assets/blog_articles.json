@@ -211,5 +211,33 @@
         "assets/articles/011_birthday_balloons/011_birthday_balloons_02.jpg",
         "assets/articles/011_birthday_balloons/011_birthday_balloons_03.jpg"
       ]
+    },
+
+    {
+      "articleId": 13,
+      "title": "Klötzchenwand",
+      "topic": ["Holz, Einrichtung"],
+      "type": "text",
+      "releaseDate": "07. Mai 2024",
+      "creationDate": "19. November 2022",
+      "snippet": "Eine Rückwand aus Klötzchen für mein Ambilight TV",
+      "content": "assets/articles/013_ambilight_background/013_ambilight_background.html",
+      "thumbnailImageUrl": "assets/articles/013_ambilight_background/013_ambilight_background_thumb.jpg",
+      "images": [
+        "assets/articles/013_ambilight_background/013_ambilight_background_01.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_02.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_03.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_04.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_05.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_06.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_07.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_08.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_09.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_10.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_11.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_12.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_13.jpg",
+        "assets/articles/013_ambilight_background/013_ambilight_background_14.jpg"
+      ]
     }
   ]
