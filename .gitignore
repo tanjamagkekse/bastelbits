@@ -45,5 +45,6 @@ Thumbs.db
 _photoOptimizeBackup*
 
 # Image Folder because I use them online
-src/assets/articles
+src/assets/articles/**/**.jpg
+src/assets/articles/**/**.png
 src/assets/images/me/20231217_171919.jpg
