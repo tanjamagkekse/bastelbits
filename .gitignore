@@ -44,5 +44,5 @@ Thumbs.db
 # PhotoFiles
 _photoOptimizeBackup*
 
-# JSON because I use database
-blog_articles.json
+# Image Folder because I use them online
+/src/app/assets/articles
