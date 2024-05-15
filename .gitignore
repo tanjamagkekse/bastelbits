@@ -45,4 +45,4 @@ Thumbs.db
 _photoOptimizeBackup*
 
 # Image Folder because I use them online
-/src/app/assets/articles
+src/assets/articles
