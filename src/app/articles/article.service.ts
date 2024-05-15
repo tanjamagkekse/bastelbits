@@ -9,8 +9,8 @@ import { IArticle } from "./article";
 })
 
 export class ArticleService {
-  private articleUrl = 'https://bastelbits.de/articles.php'; 
-  //private articleUrl = 'assets/blog_articles.json';
+  //private articleUrl = 'https://bastelbits.de/articles.php'; 
+  private articleUrl = 'assets/blog_articles.json';
   private articles: IArticle[] = [];
 
   constructor(private http: HttpClient) { }
