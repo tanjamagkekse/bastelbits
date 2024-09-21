@@ -253,5 +253,185 @@
       "images": [
         "https://bastelbits.de/assets/articles/014_matthias_babtism/014_matthias_babtism_01.jpg"
       ]
+    },
+
+    {
+      "articleId": 15,
+      "title": "Küchenfolierung",
+      "topic": ["Einrichtung"],
+      "type": "text",
+      "releaseDate": "22. Mai 2024",
+      "creationDate": "09. April 2024",
+      "snippet": "Bei Freunden habe ich die nicht mehr so schöne weiße Küche grün foliert",
+      "content": "/assets/articles/015_green_kitchen/015_green_kitchen.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_01.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_02.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_03.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_04.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_05.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_06.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_07.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_08.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_09.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_10.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_11.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_12.jpg",
+        "https://bastelbits.de/assets/articles/015_green_kitchen/015_green_kitchen_13.jpg"
+      ]
+    },
+
+    {
+      "articleId": 16,
+      "title": "Berg-Schränke",
+      "topic": ["Einrichtung"],
+      "type": "text",
+      "releaseDate": "16. Juni 2024",
+      "creationDate": "09. April 2024",
+      "snippet": "Ein weiterer Teil der grün folierten Küche sind die Hängeschränke mit Bergfront",
+      "content": "/assets/articles/016_kitchen_mountains/016_kitchen_mountains.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_01.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_02.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_03.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_04.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_05.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_06.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_07.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_08.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_09.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_10.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_11.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_12.jpg",
+        "https://bastelbits.de/assets/articles/016_kitchen_mountains/016_kitchen_mountains_13.jpg"
+      ]
+    },
+
+    {
+      "articleId": 17,
+      "title": "Klötzchen Fensterbänke",
+      "topic": ["Einrichtung", "Holz"],
+      "type": "text",
+      "releaseDate": "14. Juli 2024",
+      "creationDate": "18. Oktober 2022",
+      "snippet": "Anstatt der vorherigen weißen Fensterbänke, habe ich eine Verkleidung aus Klötzchen gebastelt",
+      "content": "/assets/articles/017_windowsills/017_windowsills.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_01.jpg",
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_02.jpg",
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_03.jpg",
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_04.jpg",
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_05.jpg",
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_06.jpg",
+        "https://bastelbits.de/assets/articles/017_windowsills/017_windowsills_07.jpg"
+      ]
     }
+    ,
+
+    {
+      "articleId": 18,
+      "title": "Nachtleuchtendes Venedig",
+      "topic": ["Einrichtung", "Malen", "Licht"],
+      "type": "text",
+      "releaseDate": "09.08.2024",
+      "creationDate": "07.07.2019",
+      "snippet": "Ein Projekt was über die Jahre gewachsen ist. Ein Malen nach Zahlen Bild mit Hintergrundbeleuchtung",
+      "content": "/assets/articles/018_venice_lights/018_venice_lights.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_01.jpg",
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_02.jpg",
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_03.jpg",
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_04.jpg",
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_05.jpg",
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_06.jpg",
+        "https://bastelbits.de/assets/articles/018_venice_lights/018_venice_lights_07.jpg"
+      ]
+    }
+    ,
+
+    {
+      "articleId": 19,
+      "title": "Geburtstagswünsche",
+      "topic": ["Malen"],
+      "type": "image",
+      "releaseDate": "...",
+      "creationDate": "19.09.2023",
+      "snippet": "Einfach so 😊 Schöner Spruch und Lust Pflanzen zu malen",
+      "content": "/assets/articles/019_birthday_happiness/019_birthday_happiness.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/019_birthday_happiness/019_birthday_happiness_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/019_birthday_happiness/019_birthday_happiness_01.jpg",
+        "https://bastelbits.de/assets/articles/019_birthday_happiness/019_birthday_happiness_02.jpg",
+        "https://bastelbits.de/assets/articles/019_birthday_happiness/019_birthday_happiness_03.jpg",
+        "https://bastelbits.de/assets/articles/019_birthday_happiness/019_birthday_happiness_04.jpg",
+        "https://bastelbits.de/assets/articles/019_birthday_happiness/019_birthday_happiness_05.jpg"
+      ]
+    },
+
+    {
+      "articleId": 20,
+      "title": "Sofa-Seitenablage",
+      "topic": ["Einrichtung", "Holz"],
+      "type": "text",
+      "releaseDate": "21. September 2024",
+      "creationDate": "16. Mai 2024",
+      "snippet": "Mir fehlte in der Ecke auf dem Sofa immer eine Ablage 😋",
+      "content": "/assets/articles/020_couchtable/020_couchtable.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_01.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_02.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_03.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_04.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_05.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_06.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_07.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_08.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_08.jpg",
+        "https://bastelbits.de/assets/articles/020_couchtable/020_couchtable_10.jpg"
+      ]
+    },
+
+    {
+      "articleId": 21,
+      "title": "Malen nach Zahlen - Boba Fett",
+      "topic": ["Malen"],
+      "type": "image",
+      "releaseDate": "...",
+      "creationDate": "12. Dezember 2021",
+      "snippet": "Anstatt der vorherigen weißen Fensterbänke, habe ich eine Verkleidung aus Klötzchen gebastelt",
+      "content": "/assets/articles/021_boba_fett/021_boba_fett.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_01.jpg",
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_02.jpg",
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_03.jpg",
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_04.jpg",
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_05.jpg",
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_06.jpg",
+        "https://bastelbits.de/assets/articles/021_boba_fett/021_boba_fett_07.jpg"
+      ]
+    },
+
+    {
+      "articleId": 24,
+      "title": "Wäsche-Wagen",
+      "topic": ["Einrichtung", "Holz"],
+      "type": "text",
+      "releaseDate": "...",
+      "creationDate": "12. Juli 2020",
+      "snippet": "Die kleine Lücke zwischen Waschmaschine und Trockner musste doch ausgenutzt werden",
+      "content": "/assets/articles/020_laundry_car/020_laundry_car.html",
+      "thumbnailImageUrl": "https://bastelbits.de/assets/articles/020_laundry_car/020_laundry_car_thumb.jpg",
+      "images": [
+        "https://bastelbits.de/assets/articles/020_laundry_car/020_laundry_car_01.jpg",
+        "https://bastelbits.de/assets/articles/020_laundry_car/020_laundry_car_02.jpg",
+        "https://bastelbits.de/assets/articles/020_laundry_car/020_laundry_car_03.jpg"
+      ]
+    }
+
   ]
